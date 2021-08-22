@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Izz Hafeez</title>
+	<link rel="stylesheet" href="../index.css">
+	<link rel="icon" type="image/png" href="../img/desmosito bw.png">
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Izz Hafeez Personal Site">
+
+	<meta property="og:title" content="Izz Hafeez"/>
+	<meta property="og:image" content="../img/izzhafeez.png"/>
+	<meta property="og:description" content="Personal Site / Portfolio"/>
+	<meta property="og:url" content="izzhafeez.com"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name=”x-apple-disable-message-reformatting” />
+</head>
+<body>
+	<section>
+		<aside>
+			<header>sheets.py</header>
+			<summary>This package is simple. It just extracts data out from your Google Sheets as a dataframe. Although I have many different functions to suit my needs, they all follow one pattern, which is the function I have listed below. <a href="../projects.html">Go Back</a></summary>
+			<footer>
+                <a href="#"><img src="../img/desmosito bw.png" style="height:3rem;"></a>
+                <a href="https://www.linkedin.com/in/izzhafeez/"><img src="../img/linkedin.svg" alt="LinkedIn" height="20" value="#0A66C2"></a>
+                <a href="https://www.youtube.com/c/izzhafeez"><img src="../img/youtube.svg" alt="Youtube" height="20" value="#FF0000"></a>
+                <a href="https://www.instagram.com/mynameizzhafeez/?hl=en"><img src="../img/instagram.svg" alt="Instagram" height="20" value="#E4405F"></a>
+                <a href="mailto:izzhafeez@gmail.com"><img src="../img/gmail.svg" alt="Gmail" height="20" value="#EA4335"></a>
+                <a href="https://github.com/mynameizzhafeez"><img src="../img/github.svg" alt="Github" height="20" value="#181717"></a>
+                <a href="https://musescore.com/izzhafeez"><img src="../img/musescore.svg" alt="MuseScore" height="20" value="#1A70B8"></a>
+            </footer>
+		</aside>
+		<main>
+			<h3 id="packages">PACKAGES</h3>
+			<pre>
+				<code>
+from gsheets import Sheets
+import pandas as pd</code>
+			</pre>
+            <h3 id="codes">CODES</h3>
+            <pre>
+                <code>
+def <fn>getSheet</fn>(name, sheetId):
+    <quote>
+    PURPOSE
+
+    Just extract data from my database, which is all in Google Sheets.
+    Output is simply a dataframe.
+    There is a bunch of things to set up before this code can actually work,
+    but once that's done, all you need is to input the name of the sheet, as well as the overall sheetId, found in the url.
+    </quote>
+    sheets = Sheets.from_files('client_secrets.json','~/storage.json')[sheetId]
+    return sheets.find(name).to_frame()</code>
+            </pre>
+		</main>
+	</section>
+</body>
