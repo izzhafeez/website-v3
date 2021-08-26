@@ -1,0 +1,3 @@
+[submodule "website-v3"]
+	path = website-v3
+	url = "https://github.com/mynameizzhafeez/website-v3.git"
