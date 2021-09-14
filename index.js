@@ -1,5 +1,5 @@
 function turnon(id) {
-	if (document.documentElement.clientWidth > 1100) {
+	if (document.documentElement.clientWidth > 1200) {
 		document.getElementById(id).style.display = "block";
 		document.getElementById("default").style.display = "none";
 	} else {
@@ -12,15 +12,26 @@ function turnon(id) {
 		document.getElementById(id).style.borderColor = "white";
 		document.getElementById(id).style.borderWidth = "1px";
 		document.getElementById(id).style.borderStyle = "solid";
+		document.getElementById(id).style.zIndex = "10";
 	}
 }
 
 function turnoff(id) {
-	if (document.documentElement.clientWidth > 1100) {
+	if (document.documentElement.clientWidth > 1200) {
 		document.getElementById(id).style.display = "none";
 		document.getElementById("default").style.display = "block";
 	} else {
+		document.getElementById("default").style.display = "block";
 		document.getElementById(id).style.display = "none";
+		document.getElementById(id).style.position = "relative";
+		document.getElementById(id).style.background = "none";
+		document.getElementById(id).style.top = "none";
+		document.getElementById(id).style.left = "none";
+		document.getElementById(id).style.padding = "0";
+		document.getElementById(id).style.borderColor = "none";
+		document.getElementById(id).style.borderWidth = "none";
+		document.getElementById(id).style.borderStyle = "none";
+		document.getElementById(id).style.zIndex = "none";
 	}
 }
 
