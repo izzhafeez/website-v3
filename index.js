@@ -2,6 +2,16 @@ function turnon(id) {
 	if (document.documentElement.clientWidth > 1200) {
 		document.getElementById(id).style.display = "block";
 		document.getElementById("default").style.display = "none";
+	} else {
+		document.getElementById(id).style.display = "block";
+		document.getElementById(id).style.position = "fixed";
+		document.getElementById(id).style.background = "#202020";
+		document.getElementById(id).style.top = "0";
+		document.getElementById(id).style.left = "0";
+		document.getElementById(id).style.padding = "20px";
+		document.getElementById(id).style.borderColor = "white";
+		document.getElementById(id).style.borderWidth = "1px";
+		document.getElementById(id).style.borderStyle = "solid";
 	}
 }
 
@@ -9,6 +19,8 @@ function turnoff(id) {
 	if (document.documentElement.clientWidth > 1200) {
 		document.getElementById(id).style.display = "none";
 		document.getElementById("default").style.display = "block";
+	} else {
+		document.getElementById(id).style.display = "none";
 	}
 }
 
