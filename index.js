@@ -1,5 +1,5 @@
 function turnon(id) {
-	if (document.documentElement.clientWidth > 1200) {
+	if (document.documentElement.clientWidth > 1100) {
 		document.getElementById(id).style.display = "block";
 		document.getElementById("default").style.display = "none";
 	} else {
@@ -16,7 +16,7 @@ function turnon(id) {
 }
 
 function turnoff(id) {
-	if (document.documentElement.clientWidth > 1200) {
+	if (document.documentElement.clientWidth > 1100) {
 		document.getElementById(id).style.display = "none";
 		document.getElementById("default").style.display = "block";
 	} else {
