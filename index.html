@@ -22,7 +22,7 @@
 	<section class="landing">
 		<aside class="landing">
 			<header>My Name Izz Hafeez</header>
-			<summary><span id="default">I am a hyperproductive and multidisciplinary programmer with 2 years of <a href="#experience">experience</a> in Data Analytics. An advocate for lifelong learning, I spend my free time undertaking various <a href="projects.html">projects</a>, which you can find on this site. You can also find my various <a href="#skills">skills</a>, <a href="#awards">awards</a> and <a href="#certifications">certifications</a>. This site is very dynamic, so you may resize it as much as you'd like. For elaboration on my projects and skills, hover over them.</span>
+			<summary><span id="default">I am a hyperproductive and multidisciplinary programmer with 2 years of <a href="#experience">experience</a> in Data Analytics. An advocate for lifelong learning, I spend my free time undertaking various <a href="projects.html">projects</a>, which you can find on this site. You can also find my various <a href="#skills">skills</a>, <a href="#awards">awards</a> and <a href="#certifications">certifications</a>. For elaboration on my projects and skills, hover over them.</span>
 			<span style="display: none;" id="python">I picked up Python in late 2016 and since then, I've used it every step of the way. Here are some of my experiences with Python:
 				<ol>
 					<li>I've completed the "Python for Everybody" and the "Deep Learning with Tensorflow" courses.</li>
@@ -59,6 +59,7 @@
 			<span style="display: none;" id="music-arrangement">Over a long period, I've refined my ability in arranging music, particularly piano arrangements. Since I started posting piano transcriptions on my Youtube in March 2019, the quality of my arrangements have seen steady improvements. Of course, this came with an influx of new musical ideas and theory concepts, which deepens my understanding of music theory. Definitely helped me compose my own pieces!</span>
 			<span style="display: none;" id="data-science">Data Science is a broad term, as I have ventured quite deep into Machine Learning, NLP, RNN and Sentiment Analysis. I've also done courses in Data Science and Deep Learning.Data Science is a broad term. A big chunk of my involvements in Data Science have been surrounding the Data Analytics/Visualisation track, which you can check out via the sections on Geospatial Analytics, Data Analytics and Data Visualisation. As for the non-Analytics portion, I've done courses in Data Science (HarvardX) and Deep Learning (IBM) and have built several CNN, RNN, and sentiment analysis models in Python and R.</span>
 			<span style="display: none;" id="business-analytics">Building off from Data Analytics, I was often tasked to provide my own conclusion for the reports I gave, which meant making my own judgements on what decisions should be made to combat the issue at hand. Often times, the problems were complex and practical solutions were hard to come by.</span>
+			<span style="display: none;" id="oop">I'm familiar with quite a large assortment of Object-Oriented Programming languages, including (but not limited to) Python, R, JavaScript, Java, C#. Although I've applied OOP principles to some Java and R scripts, the majority of my OOP journey was during my National Service, where I extensively restructured multiple Simulation scripts into objects, thereby shortening their overall time and space complexity. Also, it made it much easier to use the code.</span>
 			<span style="display: none;" id="musescore">I've intensely used MuseScore when making my music arrangements and am quite familiar with the fine-tuning tools as well. I am familiar with the MuseScore platform as well, contributing to several communities.</span>
 			<span style="display: none;" id="github">I've been using GitHub to host some of my codes, as well as gone through the necessary setups to automatically deploy my website to Netlify. Other than that, every course I went for involved GitHub to a certain extent, so I've had quite a lot of time revising my commands and configurations.</span>
 			<span style="display: none;" id="mathematical-modeling">I've used my prior maths knowledge to develop intensive functions and equations to solve problems. This is very clearly seen in my adventures in the Desmos graphing calculator app, where I produce geometric artwork as well as some of my own simulations and visual models of complex topics like 3D modelling, Fourier Analysis and Economics. Most of it was done during my NS life, so I can't share them here.</span>
@@ -168,7 +169,6 @@
 		</aside>
 		<main class="landing">
 			<h3 id="experience">EXPERIENCE</h3>
-			<?php echo "Hello there!"; ?>
 			<article id="experience-article">
 				<div class="entry" onmouseover = "turnon('mom')" title="mom" 
 				onmouseout = "turnoff('mom')">
@@ -236,11 +236,11 @@
 					<div2><a href="projects/telegram.html">Telegram</a></div2>
 					<div2>Sends customisable progress updates for your loops directly through a telegram bot, allowing for more freedom when running long code</div2>
 				</div>
-				<div class="entry"  onmouseover = "turnon('chords-py')" title="chords-py" 
+				<!-- <div class="entry"  onmouseover = "turnon('chords-py')" title="chords-py" 
 				onmouseout = "turnoff('chords-py')">
 					<div2><a href="projects/chords.html">Chords</a></div2>
 					<div2>Given a song title and artist, return its chord progression, as arranged by humans</div2>
-				</div>
+				</div> -->
 				<!-- <div class="entry"  onmouseover = "turnon('sheets-py')" title="sheets-py" 
 				onmouseout = "turnoff('sheets-py')">
 					<div2><a href="projects/sheets.html">Sheets</a></div2>
@@ -354,6 +354,8 @@
 				onmouseout = "turnoff('data-science')">Data Science</div>
 				<div class="technical" onmouseover = "turnon('business-analytics')" title="business-analytics" 
 				onmouseout = "turnoff('business-analytics')">Business Analytics</div>
+				<div class="tools" onmouseover = "turnon('oop')" title="oop" 
+				onmouseout = "turnoff('oop')">OOP</div>
 				<div class="tools" onmouseover = "turnon('musescore')" title="musescore" 
 				onmouseout = "turnoff('musescore')">MuseScore</div>
 				<div class="tools" onmouseover = "turnon('github')" title="github" 
@@ -494,7 +496,7 @@
 				onmouseout = "turnoff('robotc')">RobotC</div>
 				<div class="technical" onmouseover = "turnon('data-architecture')" title="data-architecture" 
 				onmouseout = "turnoff('data-architecture')">Data Architecture</div>
-				<!-- OOP, Netlify, Linux, Pandas, Geopandas, Seaborn, Tensorflow, Flask, Django, OpenCV -->
+				<!-- Netlify, Linux, Geopandas, Seaborn, Tensorflow, Flask, Django, OpenCV -->
 			</article2>
 		</main>
 	</section>
