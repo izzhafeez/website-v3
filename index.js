@@ -94,4 +94,15 @@ function searchFunction() {
 			div[i].style.display = "none";
 		}
 	}
+	// article = document.getElementById("music-article");
+	// div = article.getElementsByClassName("entry");
+	// for (i = 0; i < div.length; i++) {
+	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
+	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+	// 	if (text.toUpperCase().indexOf(filter) > -1) {
+	// 		div[i].style.display = "";
+	// 	} else {
+	// 		div[i].style.display = "none";
+	// 	}
+	// }
 }
