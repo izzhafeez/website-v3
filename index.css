@@ -83,6 +83,10 @@ label:nth-of-type(4), label:nth-of-type(8) {
 	color: black;
 }
 
+.technical, .soft, .tools {
+	border: var(--border);
+}
+
 #technical:not(:checked) ~ article2 > .technical,
 #soft:not(:checked) ~ article2 > .soft,
 #tools:not(:checked) ~ article2 > .tools {
@@ -105,7 +109,6 @@ label:nth-of-type(4), label:nth-of-type(8) {
 }
 
 .entry:hover {
-	/* background-color: #999; */
 	background-color: var(--entryhover);
 	color: black;
 }
