@@ -1,4 +1,7 @@
 function popup(id, name) {
+	// for (var i=0;i<img.length;i++) {
+	// 	alert(img[i].src);
+	// }
 	if (document.documentElement.clientWidth > 1200) {
 		var obj = document.getElementById(id);
 		var value = obj.innerHTML;
@@ -69,11 +72,13 @@ function searchFunction() {
 	filter = input.value.toUpperCase();
 	article = document.getElementById("skills-article");
 	div = article.getElementsByTagName("div");
+	var count = 0;
 	for (i = 0; i < div.length; i++) {
 		articleEntry = document.getElementById(div[i].getAttribute("title"));
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
 		if (text.toUpperCase().indexOf(filter) > -1) {
 			div[i].style.display = "";
+			count++;
 		} else {
 			div[i].style.display = "none";
 		}
@@ -85,6 +90,7 @@ function searchFunction() {
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
 		if (text.toUpperCase().indexOf(filter) > -1) {
 			div[i].style.display = "";
+			count++;
 		} else {
 			div[i].style.display = "none";
 		}
@@ -96,6 +102,7 @@ function searchFunction() {
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
 		if (text.toUpperCase().indexOf(filter) > -1) {
 			div[i].style.display = "";
+			count++;
 		} else {
 			div[i].style.display = "none";
 		}
@@ -107,6 +114,7 @@ function searchFunction() {
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
 		if (text.toUpperCase().indexOf(filter) > -1) {
 			div[i].style.display = "";
+			count++;
 		} else {
 			div[i].style.display = "none";
 		}
@@ -118,6 +126,7 @@ function searchFunction() {
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
 		if (text.toUpperCase().indexOf(filter) > -1) {
 			div[i].style.display = "";
+			count++;
 		} else {
 			div[i].style.display = "none";
 		}
@@ -134,3 +143,6 @@ function searchFunction() {
 	// 	}
 	// }
 }
+
+// var mallsData = [
+// ]

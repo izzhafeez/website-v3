@@ -313,6 +313,10 @@ article, article3 {
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+article > div, article2 > div, article3 > div {
+	cursor: pointer;
+}
+
 article > div {
 	/* background-color: #222; */
 	background-color: var(--offback);
@@ -350,7 +354,7 @@ article2 > div, article2 > a {
 	padding: 0.5rem;
 	margin: 0;
 	display: grid;
-	place-items: center;
+	align-items: center;
 	color: var(--text);
 	text-align: center;
 }
@@ -420,7 +424,7 @@ div > div2:nth-child(1) {
 		margin: 0;
 		padding: 2vh 10px;
 	}
-	
+
 	.entry:hover,
 	.technical:hover,
 	.soft:hover,
@@ -435,15 +439,14 @@ div > div2:nth-child(1) {
 	#pop-outer {
 		width: 80vw;
 		height: auto;
-		margin: 10vw 10vw;
+		margin: 10%;
 		position: fixed;
 		background: black;
 		padding: 2rem;
-		width: 80vw;
-		height: auto;
 		z-index: 3;
 		border: 1px solid var(--entryhover);
 		display: none;
+		overflow: scroll;
 	}
 
 	#pop-outer > button {
@@ -482,17 +485,17 @@ div > div2:nth-child(1) {
 	}
 
 	#pop-outer {
-		width: 80vw;
+		width: 90vw;
 		height: auto;
-		margin: 10vw 10vw;
+		max-height: 90%;
+		margin: 5%;
 		position: fixed;
 		background: black;
 		padding: 2rem;
-		width: 80vw;
-		height: auto;
 		z-index: 3;
 		border: 1px solid var(--entryhover);
 		display: none;
+		overflow: scroll;
 	}
 
 	#pop-outer > button {
