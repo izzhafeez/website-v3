@@ -208,7 +208,7 @@ header {
 
 #searcher {
 	height: 3rem;
-	width: 200px;
+	width: 150px;
 	border-radius: 5px;
 	border: 1px solid var(--textdark);
 	margin: 0;
@@ -220,7 +220,7 @@ header {
 	height: 3rem;
 	width: 100%;
 	overflow-x: hidden;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	padding: 0 5px;
 	/* transition: width 0.5s linear; */
 }
