@@ -20,8 +20,13 @@
 	<script src="index.js"></script>
 	<script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
 </head>
-<body>
-	<section class="landing">
+<body id="body">
+	<pop id="pop-outer">
+		<button onclick="popdown()"><u>Close (X)</u></button>
+		<h2 id="pop-title"></h2>
+		<p id="pop-text"></p>
+	</pop>
+	<section class="landing" id="landing">
 		<aside class="landing">
 			<header>My Name Izz Hafeez</header>
 			<summary><span id="default">I am a hyperproductive hobbyist with 2 years of <a href="#experience">experience</a> in Data Analytics. An advocate for lifelong learning, I spend my free time undertaking various <a href="projects.html">projects</a>, which you can find on this site. You can also find my various <a href="#skills">skills</a>, <a href="#awards">awards</a> and <a href="#certifications">certifications</a>. For elaboration on my projects and skills, hover over them.</span>
@@ -82,10 +87,11 @@
 			<span style="display: none;" id="desmos">Desmos is a powerful graphing calculator that allows for intricate mathematical equations. I've used it since early 2017, creating artwork for submission into various competitions. I've since continued this hobby, developing new formulas and equations to produce more programmatic art. I've ventured deep into complex topics such as 3D projection and fourier analysis to produce my more sophisticated art. From this, I've built an intuition as to the behaviours of a wide range of equations.</span>
 			<span style="display: none;" id="html">I've had HTML experience since I was 13, but only since 2019 did I practice it. At the beginner stages, I've followed tutorials online and even read a book on it. As for practicing, in NS, I've assisted the developer of the department website, providing my inputs and suggestions regarding the technical design. I've also dabbled with XHTML.</span>
 			<span style="display: none;" id="css">CSS is constantly evolving so every iteration of my website uses a brand new set of CSS. As much as possible, my newer designs use as little JavaScript as possible, but instead have the dynamic portions be controlled solely by CSS. I've also dabbled with SCSS and Tailwind.</span>
+			<span style="display: none;" id="java">Apart from my Java course on Udemy, I've had ample training and practice using Java for my university life. In particular, CS2030S and CS2040S has placed high emphasis on Java, with assignments and practical assessments being held in Java. As for IDEs, I've gained quite a bit of experience using Eclipse, IntelliJ as well as Vim to create my scripts.</span>
 			<span style="display: none;" id="microsoft-office">Experience in Microsoft Office is a given, but more specifically, I have developed on Excel, Power BI and Sharepoint, along with the M, DAX, VBA and SQL languages. A little experience in Azure as well.</span>
 			<span style="display: none;" id="r">Besides completing the HarvardX Data Science course taught in R, I've done further data science projects in R, producing machine learning models and visualisations. Professionally, I've used a little R during my time in NS. Besides running and maintaining data cleansing scripts in R, I have translated a few R scripts into Python, in order to facilitate the paradigm shift from R to Python.</span>
 			<span style="display: none;" id="jupyter">Jupyter Notebook is my primary IDE, as it also works as a teaching tool. It facilitates the entire Data Science process and can be used to develop R programs as well! I've continuously used it during my time in NS and beyond, and have produced several reports as well. I also have some experience in JupyterLab, the successor to Jupyter Notebook.</span>
-			<span style="display: none;" id="javascript">Besides attending the Fullstack Web Development course, I've used JavaScript to create my websites, including this one. I've also used Google Apps Script (based in JavaScript) to produce my Telegram Bots. I know a bit of Angular and React as well.</span>
+			<span style="display: none;" id="javascript">Besides attending the Fullstack Web Development course, I've used JavaScript to create my websites, including this one. I've also heavily used Google Apps Script (based in JavaScript) to produce my Telegram Bots. I know a bit of Angular and React as well.</span>
 			<span style="display: none;" id="hyperproductivity">I've been called hyperproductive by a senior of mine and indeed, I hate idling my life away. Almost every moment of my free time is spent learning and creating, becoming the best version of myself. Although this gets me to complete my tasks quickly, I do find it quite debilitating as I often lose my appetite and sleep schedule.</span>
 			<span style="display: none;" id="robotics">I've had experience with VEX Robotics and the RobotC language, having participated in the VEX Robotics competition during my time in Junior College. Those 2 years in the Robotics Club have definitely taught me a lot of Robotics lessons, as we had to learn everything the hard way. I've also had some experience using Arduino and Raspberry PI, though only for an hour or so for each.</span>
 			<span style="display: none;" id="mandarin">I currently am at the HSK 5 level and although my speaking skills are not up to par, my written skills are quite decent. I receive all my local news via 早报 and am constantly on the lookout for new vocab. Owing to my exploration of the dictionary, I know quite a bit of domain-specific words and characters, mostly in the science and music fields.</span>
@@ -136,7 +142,6 @@
 			<span style="display: none;" id="cpp">I have experience in using C++ in 2017, when starting out in coding. During that time, I mainly practiced on online compilers and the most I've done is a couple of algorithm questions. Otherwise, I haven't done any major projects in C++.</span>
 			<span style="display: none;" id="web-analysis">I've gone through the analytics for my sites and channels to find out what content works and what doesn't.</span>
 			<span style="display: none;" id="korean">I've joined a course in Korean and continued to learn it afterwards. Laddering off of Mandarin and Japanese, Korean became relatively easy to learn because of similar grammar and vocabulary.</span>
-			<span style="display: none;" id="java">I've just started my journey in Java and using the Eclipse IDE during my Java course.</span>
 			<span style="display: none;" id="m">I've learnt the M language to better understand Power BI power query code.</span>
 			<span style="display: none;" id="spanish">I've learnt Spanish on Duolingo and understand quite a bit of the grammar.</span>
 			<span style="display: none;" id="flstudio">I've used FL Studio to produce some simple beat tracks, following a couple of online tutorials and nothing more than that.</span>
@@ -148,9 +153,9 @@
 			<span style="display: none;" id="vrmc">I was appointed to become the Programming Head due to my prior experience in Python programming. In this position, I first had to rapidly learn the RobotC language within 3 weeks, in order to support the teams in competing in the annual VEX championships. I managed to even come up with slides for it and taught it briefly to the other clubmates. This was the first time I was teaching something, so it didn't go as planned. This continued when I taught Python to others. Nevertheless, it was a good learning experience as my teaching skills eventually improved. Other than that, I've contributed greatly to the Robotics Camp for the next intake of members, coming up with activities on the spot.</span>
 			<span style="display: none;" id="malls">I've created a statistics-driven card game based around the shopping malls of Singapore. Data was extracted using Python, and compiled using R. I also did some dynamic ranking using Google Sheets. As for the design, I did it in HTML and CSS, making use of as much data as I can. The cards have been tested on numerous occasions and have seen quite a number of integral shifts. Hopefully in the future I can publish the game for real.</span>
 			<span style="display: none;" id="python-packages">My coding projects exist mainly to support my other hobbies, such as Music Composition, Language Learning and my MALLS Card Game development. Although I've done quite a number of Data Science models and web applications, the main bulk of my work consists of web-scraping functions, which helps to extract and parse data. For my music ambitions, I have created code that outputs the chords to any song, standardising them into suitable formats. For my language-learning ambitions, I have created code that searches for sample sentences for any particular words. Finally, for my MALLS Card Game, I've developed many Geospatial functions that manipulate data from many sources and condense them into harmonised datasets.</span>
-			<span style="display: none;" id="java-course">The course teaches me about development in Java, including the commonly-used frameworks. There are several projects in there as well.</span>
+			<span style="display: none;" id="java-course">The course teaches me about development in Java, including the commonly-used frameworks. I've gotten used to producing simple codes using Eclipse, from simple calculators to small-scale OOP  projects.</span>
 			<span style="display: none;" id="fullstack">The course teaches beginner to advanced concepts in HTML, CSS, JavaScript, Python, Wagtail CMS, PHP and MySQL. A complete course in Web Development from a very reputable teacher. From this, I was able to refine the existing design of my website, implementing responsive features wherever I deem fit.</span>
-			<span style="display: none;" id="tensorflow">The course taught the various functionalities of Tensorflow as well as the various architectures involved in making Deep Learning models. The resources were heavy on theory, but there was plenty of practical elements as well.</span>
+			<span style="display: none;" id="tensorflow">The course taught the various functionalities of Tensorflow as well as the various architectures involved in making Deep Learning models. The resources were heavy on theory, but there was plenty of practical elements as well. Through the modules taught in the course, I've managed to develop my RNN models for music prediction as well as build prototypes for my own ambulance optimiser.</span>
 			<span style="display: none;" id="harvard-data-science">The Data Science course by Harvard was an essential one, as it taught the entire Data Science process from beginning to end. It was based in the R language, covering its various roles in Visualisation, Wrangling and especially Machine Learning. It is listed as one of the top Data Science courses online.</span>
 			<span style="display: none;" id="python-for-everybody">This was the first programming course I attended, and I was immensely focused on it, finishing the entire course within a week. The course not only went through the Python journey, but it also went into detail the SQL and Github functionalities.</span>
 			<span style="display: none;" id="smo">I've won quite a number of awards in the Singapore Mathematical Olympiad (SMO), and made it to the second round several times, despite not receiving much training beforehand. As I didn't have any mentors for competitive mathematics, I couldn't develop enough skill to attain the Gold Award in the second round. Due to the high amount of rigor needed to prove the statements, I could not pass through.</span>
@@ -161,7 +166,7 @@
 			<span style="display: none;" id="language-py">This package is made up of many small segments, all combined to assist me in learning Chinese, Japanese and Korean. Particularly, I used web scraping to obtain sample sentences for any given word, along with English transliterations and translations for all sorts of text. I've also done web-scraping scripts to extract French and Spanish vocabulary from a variety of sources. Packages used: re, pykakasi, chinese, spiderman.py, utils.py, sheets.py, jaconv, random and more.</span>
 			<span style="display: none;" id="spiderman-py">This is the package that I use most often. It greatly improved my efficiency in Web Scraping, making the whole process neater. It involves a singular class, named website() that accepts a url. And in it, you can extract the tables, lists and links found in the site. It streamlined a lot of my daily processes.</span>
 			<span style="display: none;" id="utils-py">This package is made up of a collection of useful functions, using all sorts of packages and dependencies. More generally, this is a dumping ground for segments of codes that I repeatedly use during my time programming. Codes relating to geography and pandas for instance.</span>
-			<span style="display: none;" id="telegram-py">This package allows you to send progress updates about your code, directly to your Telegram bot. This allowed me to be very far from my workstation, to go around the place while my code was still running. For my work, I even enabled the code to be run remotely. Do note that setting up a Telegram bot first needs to be done via BotFather, and botId is what you need to place into the code.</span>
+			<span style="display: none;" id="telegram-py">This package facilitates the creation of a telegram interface for codes, allowing for the remote activation and monitoring of scripts. This allowed me to be very far from my workstation, to go around the place while my code was still running. Do note that setting up a Telegram bot first needs to be done via BotFather, and botId is what is needed in the code.</span>
 			<span style="display: none;" id="chords-py">I've been doing alot of Machine Learning and Recurrent Neural Network projects pertaining to the chord progressions of songs. While that has some success, I wanted to take a step further to incorporate NLP into the RNN. Meaning, I wanted to output a chord progression given any piece of text. That part is quite unfinished so this is the part I have. So basically, once I get a list of songs, along with their artists, I can get their chord progressions, standardise them and extract their BPM and popularity.</span>
 			<span style="display: none;" id="sheets-py">This package is simple. It just extracts data out from your Google Sheets as a dataframe. Although I have many different functions to suit my needs, they all follow one pattern, which is the function I have listed below.</span>
 			</summary>
@@ -183,22 +188,19 @@
 		<main class="landing">
 			<h3 id="experience">EXPERIENCE</h3>
 			<article id="experience-article">
-				<div class="entry" onmouseover = "turnon('mom')" title="mom" 
-				onmouseout = "turnoff('mom')">
+				<div class="entry" onclick = "popup('mom','Ministry of Manpower')" onmouseover = "turnon('mom')" title="mom" onmouseout = "turnoff('mom')">
 					<div>Feb'21 - Jul'21</div>
 					<div>Management Support</div>
 					<div>Ministry of Manpower</div>
 					<div>Designed dashboards and a Data Governance Portal</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('scdf')" title="scdf" 
-				onmouseout = "turnoff('scdf')">
+				<div class="entry" onclick = "popup('scdf','Singapore Civil Defence Force')" onmouseover = "turnon('scdf')" title="scdf" onmouseout = "turnoff('scdf')">
 					<div>Feb'19 - Jan'21</div>
 					<div>Data Analytics  <span style="color:#EFD065;">★</span></div>
 					<div>Singapore Civil Defence Force</div>
 					<div>Developed, maintained and ran models to optimise the placement of ambulances</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('vrmc')" title="vrmc" 
-				onmouseout = "turnoff('vrmc')">
+				<div class="entry" onclick = "popup('vrmc','Robotics Club')" onmouseover = "turnon('vrmc')" title="vrmc" onmouseout = "turnoff('vrmc')">
 					<div>Jun'17 - May'18</div>
 					<div>Programming Head</div>
 					<div>Victoria Robotics-Makers' Club</div>
@@ -207,93 +209,77 @@
 			</article>
 			<h3 id="projects">PROJECTS</h3>
 			<article id="projects-article">
-				<div class="entry" onmouseover = "turnon('malls')" title="malls" 
-				onmouseout = "turnoff('malls')">
+				<div class="entry" onclick = "popup('malls','MALLS Card Game')" onmouseover = "turnon('malls')" title="malls" onmouseout = "turnoff('malls')">
 					<div2><a href="projects/malls.html">MALLS Card Game</a> <span style="color:#EFD065;">★</span></div2>
 					<div2>Statistics-driven card game based on shopping malls, using parsed data from numerous sources</div2>
 				</div>
-				<!-- <div class="entry" onmouseover = "turnon('telegram-bots')" title="telegram-bots" 
-				onmouseout = "turnoff('telegram-bots')">
+				<!-- <div class="entry" onclick = "popup('telegram-bots')" onmouseover = "turnon('telegram-bots')" title="telegram-bots" onmouseout = "turnoff('telegram-bots')">
 					<div>Google Apps Script, API</div>
 					<div><a href="projects.html#telegram">Telegram Bots</a></div>
 					<div>I've created bots that assist in searching for vocabulary, idioms and Halal food</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('python-packages')" title="python-packages" 
-				onmouseout = "turnoff('python-packages')">
+				<div class="entry" onclick = "popup('python-packages')" onmouseover = "turnon('python-packages')" title="python-packages" onmouseout = "turnoff('python-packages')">
 					<div>Python, API</div>
 					<div><a href="projects.html#python">Modules & Packages</a></div>
 					<div>Designed code that facilitates web scraping, language-learning and geospatial analytics</div>
 				</div> -->
-				<div class="entry"  onmouseover = "turnon('geo-py')" title="geo-py" 
-				onmouseout = "turnoff('geo-py')">
+				<div class="entry" onclick = "popup('geo-py','Geospatial Package')" onmouseover = "turnon('geo-py')" title="geo-py" onmouseout = "turnoff('geo-py')">
 					<div2><a href="projects/geo.html">Geospatial</a></div2>
 					<div2>Compiles data relating to buses, MRTs, roads, altitude, parking and outputs harmonised datasets</div2>
 				</div>
-				<div class="entry"  onmouseover = "turnon('language-py')" title="language-py" 
-				onmouseout = "turnoff('language-py')">
+				<div class="entry" onclick = "popup('language-py','Language Package')" onmouseover = "turnon('language-py')" title="language-py" onmouseout = "turnoff('language-py')">
 					<div2><a href="projects/language.html">Language</a></div2>
 					<div2>Facilitates the language-learning process by outputting sample sentences, transliterations and usages</div2>
 				</div>
-				<div class="entry"  onmouseover = "turnon('spiderman-py')" title="spiderman-py" 
-				onmouseout = "turnoff('spiderman-py')">
+				<div class="entry" onclick = "popup('spiderman-py','Spiderman Package')" onmouseover = "turnon('spiderman-py')" title="spiderman-py" onmouseout = "turnoff('spiderman-py')">
 					<div2><a href="projects/spiderman.html">Spiderman</a></div2>
 					<div2>Facilitates web scraping and spidering across sites, and allows for the merging of similar tables within a page</div2>
 				</div>
-				<!-- <div class="entry"  onmouseover = "turnon('utils-py')" title="utils-py" 
-				onmouseout = "turnoff('utils-py')">
+				<!-- <div class="entry"  onclick = "popup('utils-py')" onmouseover = "turnon('utils-py')" title="utils-py" onmouseout = "turnoff('utils-py')">
 					<div2><a href="projects/utils.html">Utils</a></div2>
 					<div2>Contains useful shorthand functions to perform frequently-used but long-winded operations</div2>
 				</div> -->
-				<div class="entry"  onmouseover = "turnon('telegram-py')" title="telegram-py" 
-				onmouseout = "turnoff('telegram-py')">
+				<div class="entry" onclick = "popup('telegram-py','Telegram Package')" onmouseover = "turnon('telegram-py')" title="telegram-py" onmouseout = "turnoff('telegram-py')">
 					<div2><a href="projects/telegram.html">Telegram</a></div2>
 					<div2>Sends customisable progress updates for your loops directly through a telegram bot, allowing for more freedom when running long code</div2>
 				</div>
-				<div class="entry"  onmouseover = "turnon('chords-py')" title="chords-py" 
-				onmouseout = "turnoff('chords-py')">
+				<div class="entry" onclick = "popup('chords-py','Chords Package')" onmouseover = "turnon('chords-py')" title="chords-py" onmouseout = "turnoff('chords-py')">
 					<div2><a href="projects/chords.html">Chords</a></div2>
 					<div2>Given a song title and artist, return its chord progression, as arranged by humans</div2>
 				</div>
-				<!-- <div class="entry"  onmouseover = "turnon('sheets-py')" title="sheets-py" 
-				onmouseout = "turnoff('sheets-py')">
+				<!-- <div class="entry"  onclick = "popup('sheets-py')" onmouseover = "turnon('sheets-py')" title="sheets-py" onmouseout = "turnoff('sheets-py')">
 					<div2><a href="projects/sheets.html">Sheets</a></div2>
 					<div2>Facilitates the extraction of data from my Google Sheets database</div2>
 				</div> -->
 			</article>
 			<h3 id="certifications">CERTIFICATIONS</h3>
 			<article3 id="certifications-article">
-				<div class="entry" onmouseover = "turnon('java-course')" title="java-course" 
-				onmouseout = "turnoff('java-course')">
+				<div class="entry" onclick = "popup('java-course','Java Development Course')" onmouseover = "turnon('java-course')" title="java-course" onmouseout = "turnoff('java-course')">
 					<div>In Progress (17 hours)</div>
 					<div>Java Development</div>
 					<div>Udemy</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('fullstack')" title="fullstack" 
-				onmouseout = "turnoff('fullstack')">
+				<div class="entry" onclick = "popup('fullstack', 'Fullstack Web Development Course')" onmouseover = "turnon('fullstack')" title="fullstack" onmouseout = "turnoff('fullstack')">
 					<div>Sep'21 (67 hours)</div>
 					<div>Fullstack Web Development</div>
 					<div>Udemy</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('mandarin')" title="mandarin" 
-				onmouseout = "turnoff('mandarin')">
+				<div class="entry" onclick = "popup('mandarin','HSK 5 Proficiency Test')" onmouseover = "turnon('mandarin')" title="mandarin" onmouseout = "turnoff('mandarin')">
 					<div>Apr'21</div>
 					<div>HSK 5 Chinese Proficiency Test</div>
 					<div>Hanban Confucius Institute</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('tensorflow')" title="tensorflow" 
-				onmouseout = "turnoff('tensorflow')">
+				<div class="entry" onclick = "popup('tensorflow','Tensorflow Course')" onmouseover = "turnon('tensorflow')" title="tensorflow" onmouseout = "turnoff('tensorflow')">
 					<div>Oct'20 (20 hours)</div>
 					<div>Deep Learning with Tensorflow</div>
 					<div>IBM</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('harvard-data-science')" title="harvard-data-science" 
-				onmouseout = "turnoff('harvard-data-science')">
+				<div class="entry" onclick = "popup('harvard-data-science','Data Science Course')" onmouseover = "turnon('harvard-data-science')" title="harvard-data-science" onmouseout = "turnoff('harvard-data-science')">
 					<div>Feb'20 (185 hours)</div>
 					<div>Data Science <span style="color:#EFD065;">★</span></div>
 					<div>HarvardX</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('python-for-everybody')" title="python-for-everybody" 
-				onmouseout = "turnoff('python-for-everybody')">
+				<div class="entry" onclick = "popup('python-for-everybody','Python Course')" onmouseover = "turnon('python-for-everybody')" title="python-for-everybody" onmouseout = "turnoff('python-for-everybody')">
 					<div>Jan'17 (104 hours)</div>
 					<div>Python for Everybody</div>
 					<div>University of Michigan</div>
@@ -301,26 +287,22 @@
 			</article3>
 			<h3 id="awards">TOP AWARDS</h3>
 			<article3 id="awards-article">
-				<div class="entry" onmouseover = "turnon('smo')" title="smo" 
-				onmouseout = "turnoff('smo')">
+				<div class="entry" onclick = "popup('smo','Singapore Mathematical Olympiad')" onmouseover = "turnon('smo')" title="smo" onmouseout = "turnoff('smo')">
 					<div>Silver</div>
 					<div>Singapore Mathematical Olympiad</div>
 					<div>2011, 2014, 2016, 2017, 2018</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('ti')" title="ti" 
-				onmouseout = "turnoff('ti')">
+				<div class="entry" onclick = "popup('ti','Graphing Competition')" onmouseover = "turnon('ti')" title="ti" onmouseout = "turnoff('ti')">
 					<div>Gold</div>
 					<div>Designing with TI Graphing Calculators</div>
 					<div>2018</div>
 				</div>
-				<div class="entry" onmouseover = "turnon('best-in-maths')" title="best-in-maths" 
-				onmouseout = "turnoff('best-in-maths')">
+				<div class="entry" onclick = "popup('best-in-maths','Best in Mathematics')" onmouseover = "turnon('best-in-maths')" title="best-in-maths" onmouseout = "turnoff('best-in-maths')">
 					<div>Subject Award</div>
 					<div>Best in Mathematics</div>
 					<div>2008, 2010, 2011, 2012</div>
 				</div>
-				<div id="other-content" class="entry" onmouseover = "turnon('other')" title="other" 
-				onmouseout = "turnoff('other')">
+				<div id="other-content" class="entry" onclick = "popup('other','Other Awards')" onmouseover = "turnon('other')" title="other" onmouseout = "turnoff('other')">
 					<div></div>
 					<div>Other Awards</div>
 					<div></div>
@@ -337,178 +319,92 @@
 			<label for="colors">Toggle Colors</label>
 			<div style="height:6rem;"></div>
 			<article2 id="skills-article">
-				<div class="tools" onmouseover = "turnon('python')" title="python" 
-				onmouseout = "turnoff('python')">Python</div>
-				<div class="technical" onmouseover = "turnon('data-wrangling')" title="data-wrangling" 
-				onmouseout = "turnoff('data-wrangling')">Data Wrangling</div>
-				<div class="soft" onmouseover = "turnon('critical-thinking')" title="critical-thinking" 
-				onmouseout = "turnoff('critical-thinking')">Critical Thinking</div>
-				<div class="tools" onmouseover = "turnon('pandas')" title="pandas"
-				onmouseout = "turnoff('pandas')">(Geo)Pandas</div>
-				<div class="technical" onmouseover = "turnon('data-analytics')" title="data-analytics" 
-				onmouseout = "turnoff('data-analytics')">Data Analytics</div>
-				<div class="technical" onmouseover = "turnon('web-development')" title="web-development" 
-				onmouseout = "turnoff('web-development')">Web Development</div>
-				<div class="soft" onmouseover = "turnon('ui-ux')" title="ui-ux" 
-				onmouseout = "turnoff('ui-ux')">UI/UX Design</div>
-				<div class="technical" onmouseover = "turnon('geospatial-analytics')" title="geospatial-analytics" 
-				onmouseout = "turnoff('geospatial-analytics')">Geospatial Analytics</div>
-				<div class="technical" onmouseover = "turnon('data-harmonisation')" title="data-harmonisation" 
-				onmouseout = "turnoff('data-harmonisation')">Data Harmonisation</div>
-				<div class="technical" onmouseover = "turnon('web-scraping')" title="web-scraping" 
-				onmouseout = "turnoff('web-scraping')">Web Scraping</div>
-				<div class="technical" onmouseover = "turnon('data-visualisation')" title="data-visualisation" 
-				onmouseout = "turnoff('data-visualisation')">Data Visualisation</div>
-				<div class="soft" onmouseover = "turnon('independent-learning')" title="independent-learning" 
-				onmouseout = "turnoff('independent-learning')">Independent Learning</div>
-				<div class="soft" onmouseover = "turnon('music-arrangement')" title="music-arrangement" 
-				onmouseout = "turnoff('music-arrangement')">Music Arrangement</div>
-				<div class="technical" onmouseover = "turnon('data-science')" title="data-science" 
-				onmouseout = "turnoff('data-science')">Data Science</div>
-				<div class="technical" onmouseover = "turnon('business-analytics')" title="business-analytics" 
-				onmouseout = "turnoff('business-analytics')">Business Analytics</div>
-				<div class="technical" onmouseover = "turnon('oop')" title="oop" 
-				onmouseout = "turnoff('oop')">OOP</div>
-				<div class="tools" onmouseover = "turnon('sql')" title="sql" 
-				onmouseout = "turnoff('sql')">SQL</div>
-				<div class="tools" onmouseover = "turnon('musescore')" title="musescore" 
-				onmouseout = "turnoff('musescore')">MuseScore</div>
-				<div class="tools" onmouseover = "turnon('github')" title="github" 
-				onmouseout = "turnoff('github')">GitHub</div>
-				<div class="technical" onmouseover = "turnon('mathematical-modeling')" title="mathematical-modeling" 
-				onmouseout = "turnoff('mathematical-modeling')">Mathematical Modeling</div>
-				<div class="technical" onmouseover = "turnon('cloud-computing')" title="cloud-computing" 
-				onmouseout = "turnoff('cloud-computing')">Cloud Computing</div>
-				<div class="tools" onmouseover = "turnon('g-suite')" title="g-suite" 
-				onmouseout = "turnoff('g-suite')">G Suite</div>
-				<div class="tools" onmouseover = "turnon('desmos')" title="desmos" 
-				onmouseout = "turnoff('desmos')">Desmos</div>
-				<div class="tools" onmouseover = "turnon('html')" title="html" 
-				onmouseout = "turnoff('html')">HTML</div>
-				<div class="tools" onmouseover = "turnon('css')" title="css" 
-				onmouseout = "turnoff('css')">CSS</div>
-				<div class="tools" onmouseover = "turnon('microsoft-office')" title="microsoft-office" 
-				onmouseout = "turnoff('microsoft-office')">Microsoft Office</div>
-				<div class="tools" onmouseover = "turnon('r')" title="r" 
-				onmouseout = "turnoff('r')">R</div>
-				<div class="tools" onmouseover = "turnon('jupyter')" title="jupyter" 
-				onmouseout = "turnoff('jupyter')">Jupyter</div>
-				<div class="tools" onmouseover = "turnon('javascript')" title="javascript" 
-				onmouseout = "turnoff('javascript')">JavaScript</div>
-				<div class="soft" onmouseover = "turnon('hyperproductivity')" title="hyperproductivity" 
-				onmouseout = "turnoff('hyperproductivity')">Hyperproductivity</div>
-				<div class="technical" onmouseover = "turnon('robotics')" title="robotics" 
-				onmouseout = "turnoff('robotics')">Robotics</div>
-				<div class="soft" onmouseover = "turnon('mandarin')" title="mandarin" 
-				onmouseout = "turnoff('mandarin')">Mandarin</div>
-				<!-- <div class="technical" onmouseover = "turnon('analytical-reasoning')" title="analytical-reasoning" 
-				onmouseout = "turnoff('analytical-reasoning')">Analytical Reasoning</div> -->
-				<div class="soft" onmouseover = "turnon('api')" title="api" 
-				onmouseout = "turnoff('api')">API</div>
-				<!-- <div class="soft" onmouseover = "turnon('mentoring')" title="mentoring" 
-				onmouseout = "turnoff('mentoring')">Mentoring</div> -->
-				<div class="tools" onmouseover = "turnon('google-apps-script')" title="google-apps-script" 
-				onmouseout = "turnoff('google-apps-script')">Google Apps Script</div>
-				<div class="technical" onmouseover = "turnon('sharepoint-development')" title="sharepoint-development" 
-				onmouseout = "turnoff('sharepoint-development')">Sharepoint Development</div>
-				<!-- <div class="soft" onmouseover = "turnon('written-communication')" title="written-communication" 
-				onmouseout = "turnoff('written-communication')">Written Communication</div> -->
-				<div class="tools" onmouseover = "turnon('sublime')" title="sublime" 
-				onmouseout = "turnoff('sublime')">Sublime</div>
-				<div class="tools" onmouseover = "turnon('power-bi')" title="power-bi" 
-				onmouseout = "turnoff('power-bi')">Power BI</div>
-				<div class="tools" onmouseover = "turnon('telegram-bots')" title="telegram-bots" 
-				onmouseout = "turnoff('telegram-bots')">Telegram Bots</div>
-				<div class="technical" onmouseover = "turnon('machine-learning')" title="machine-learning" 
-				onmouseout = "turnoff('machine-learning')">Machine Learning</div>
-				<div class="tools" onmouseover = "turnon('tableau')" title="tableau" 
-				onmouseout = "turnoff('tableau')">Tableau</div>
-				<div class="soft" onmouseover = "turnon('leadership')" title="leadership" 
-				onmouseout = "turnoff('leadership')">Leadership</div>
-				<div class="soft" onmouseover = "turnon('music-composition')" title="music-composition" 
-				onmouseout = "turnoff('music-composition')">Music Composition</div>
-				<!-- <div class="technical" onmouseover = "turnon('graphic-design')" title="graphic-design" 
-				onmouseout = "turnoff('graphic-design')">Graphic Design</div> -->
-				<div class="tools" onmouseover = "turnon('jquery')" title="jquery" 
-				onmouseout = "turnoff('jquery')">JQuery</div>
-				<!-- <div class="soft" onmouseover = "turnon('documentation')" title="documentation" 
-				onmouseout = "turnoff('documentation')">Documentation</div> -->
-				<div class="technical" onmouseover = "turnon('data-governance')" title="data-governance" 
-				onmouseout = "turnoff('data-governance')">Data Governance</div>
-				<div class="tools" onmouseover = "turnon('photoshop')" title="photoshop" 
-				onmouseout = "turnoff('photoshop')">Photoshop</div>
-				<!-- <div class="technical" onmouseover = "turnon('nlp')" title="nlp" 
-				onmouseout = "turnoff('nlp')">NLP</div> -->
-				<div class="soft" onmouseover = "turnon('malay')" title="malay" 
-				onmouseout = "turnoff('malay')">Malay</div>
-				<div class="technical" onmouseover = "turnon('business-intelligence')" title="business-intelligence" 
-				onmouseout = "turnoff('business-intelligence')">Business Intelligence</div>
-				<!-- <div class="soft" onmouseover = "turnon('minute-taking')" title="minute-taking" 
-				onmouseout = "turnoff('minute-taking')">Minute-taking</div> -->
-				<div class="technical" onmouseover = "turnon('artificial-intelligence')" title="artificial-intelligence" 
-				onmouseout = "turnoff('artificial-intelligence')">Artificial Intelligence</div>
-				<!-- <div class="soft" onmouseover = "turnon('agile-framework')" title="agile-framework" 
-				onmouseout = "turnoff('agile-framework')">Agile Framework</div> -->
-				<!-- <div class="tools" onmouseover = "turnon('dax')" title="dax" 
-				onmouseout = "turnoff('dax')">DAX</div> -->
-				<div class="technical" onmouseover = "turnon('data-modeling')" title="data-modeling" 
-				onmouseout = "turnoff('data-modeling')">Data Modeling</div>
-				<div class="tools" onmouseover = "turnon('ssms')" title="ssms" 
-				onmouseout = "turnoff('ssms')">SSMS</div>
-				<!-- <div class="technical" onmouseover = "turnon('audio-analysis')" title="audio-analysis" 
-				onmouseout = "turnoff('audio-analysis')">Audio Analysis</div> -->
-				<div class="soft" onmouseover = "turnon('video-editing')" title="video-editing" 
-				onmouseout = "turnoff('video-editing')">Video Editing</div>
-				<div class="tools" onmouseover = "turnon('anaconda')" title="anaconda" 
-				onmouseout = "turnoff('anaconda')">Anaconda</div>
-				<div class="tools" onmouseover = "turnon('c-sharp')" title="c-sharp" 
-				onmouseout = "turnoff('c-sharp')">C#</div>
-				<div class="tools" onmouseover = "turnon('aws')" title="aws" 
-				onmouseout = "turnoff('aws')">AWS</div>
-				<div class="tools" onmouseover = "turnon('er-studio')" title="er-studio" 
-				onmouseout = "turnoff('er-studio')">ER Studio</div>
-				<div class="soft" onmouseover = "turnon('japanese')" title="japanese" 
-				onmouseout = "turnoff('japanese')">Japanese</div>
-				<div class="tools" onmouseover = "turnon('php')" title="php" 
-				onmouseout = "turnoff('php')">PHP</div>
-				<!-- <div class="technical" onmouseover = "turnon('software-testing')" title="software-testing" 
-				onmouseout = "turnoff('software-testing')">Software Testing</div> -->
-				<div class="tools" onmouseover = "turnon('vs-code')" title="vs-code" 
-				onmouseout = "turnoff('vs-code')">VS Code</div>
-				<div class="soft" onmouseover = "turnon('music-production')" title="music-production" 
-				onmouseout = "turnoff('music-production')">Music Production</div>
-				<div class="tools" onmouseover = "turnon('ruby')" title="ruby" 
-				onmouseout = "turnoff('ruby')">Ruby</div>
-				<div class="tools" onmouseover = "turnon('qgis')" title="qgis" 
-				onmouseout = "turnoff('qgis')">QGis</div>
-				<div class="tools" onmouseover = "turnon('vba')" title="vba" 
-				onmouseout = "turnoff('vba')">Visual Basic (VBA)</div>
-				<!-- <div class="technical" onmouseover = "turnon('seo')" title="seo" 
-				onmouseout = "turnoff('seo')">SEO</div> -->
-				<div class="tools" onmouseover = "turnon('azure')" title="azure" 
-				onmouseout = "turnoff('azure')">Azure</div>
-				<div class="soft" onmouseover = "turnon('french')" title="french" 
-				onmouseout = "turnoff('french')">French</div>
-				<div class="tools" onmouseover = "turnon('cpp')" title="cpp" 
-				onmouseout = "turnoff('cpp')">C++</div>
-				<!-- <div class="technical" onmouseover = "turnon('web-analysis')" title="web-analysis" 
-				onmouseout = "turnoff('web-analysis')">Web Analytics</div> -->
-				<div class="soft" onmouseover = "turnon('korean')" title="korean" 
-				onmouseout = "turnoff('korean')">Korean</div>
-				<div class="tools" onmouseover = "turnon('java')" title="java" 
-				onmouseout = "turnoff('java')">Java</div>
-				<!-- <div class="tools" onmouseover = "turnon('m')" title="m" 
-				onmouseout = "turnoff('m')">M</div> -->
-				<div class="soft" onmouseover = "turnon('spanish')" title="spanish" 
-				onmouseout = "turnoff('spanish')">Spanish</div>
-				<!-- <div class="tools" onmouseover = "turnon('flstudio')" title="flstudio" 
-				onmouseout = "turnoff('flstudio')">FL Studio</div> -->
-				<div class="tools" onmouseover = "turnon('swift')" title="swift" 
-				onmouseout = "turnoff('swift')">Swift</div>
-				<div class="tools" onmouseover = "turnon('robotc')" title="robotc" 
-				onmouseout = "turnoff('robotc')">RobotC</div>
-				<!-- <div class="technical" onmouseover = "turnon('data-architecture')" title="data-architecture" 
-				onmouseout = "turnoff('data-architecture')">Data Architecture</div> -->
+				<div class="tools" onclick = "popup('python','Python Programming')" onmouseover = "turnon('python')" title="python" onmouseout = "turnoff('python')">Python</div>
+				<div class="technical" onclick = "popup('data-wrangling','Data Wrangling')" onmouseover = "turnon('data-wrangling')" title="data-wrangling" onmouseout = "turnoff('data-wrangling')">Data Wrangling</div>
+				<div class="soft" onclick = "popup('critical-thinking','Critical Thinking')" onmouseover = "turnon('critical-thinking')" title="critical-thinking" onmouseout = "turnoff('critical-thinking')">Critical Thinking</div>
+				<div class="tools" onclick = "popup('pandas','Python (Geo)Pandas')" onmouseover = "turnon('pandas')" title="pandas" onmouseout = "turnoff('pandas')">(Geo)Pandas</div>
+				<div class="technical" onclick = "popup('data-analytics','Data Analytics')" onmouseover = "turnon('data-analytics')" title="data-analytics" onmouseout = "turnoff('data-analytics')">Data Analytics</div>
+				<div class="technical" onclick = "popup('web-development','Web Development')" onmouseover = "turnon('web-development')" title="web-development" onmouseout = "turnoff('web-development')">Web Development</div>
+				<div class="soft" onclick = "popup('ui-ux','UI-UX')" onmouseover = "turnon('ui-ux')" title="ui-ux" onmouseout = "turnoff('ui-ux')">UI/UX Design</div>
+				<div class="technical" onclick = "popup('geospatial-analytics','Geospatial Analytics')" onmouseover = "turnon('geospatial-analytics')" title="geospatial-analytics" onmouseout = "turnoff('geospatial-analytics')">Geospatial Analytics</div>
+				<div class="technical" onclick = "popup('data-harmonisation','Data Harmonisation')" onmouseover = "turnon('data-harmonisation')" title="data-harmonisation" onmouseout = "turnoff('data-harmonisation')">Data Harmonisation</div>
+				<div class="technical" onclick = "popup('web-scraping','Web Scraping')" onmouseover = "turnon('web-scraping')" title="web-scraping" onmouseout = "turnoff('web-scraping')">Web Scraping</div>
+				<div class="technical" onclick = "popup('data-visualisation','Data Visualisation')" onmouseover = "turnon('data-visualisation')" title="data-visualisation" onmouseout = "turnoff('data-visualisation')">Data Visualisation</div>
+				<div class="soft" onclick = "popup('independent-learning','Independent Learning')" onmouseover = "turnon('independent-learning')" title="independent-learning" onmouseout = "turnoff('independent-learning')">Independent Learning</div>
+				<div class="soft" onclick = "popup('music-arrangement','Music Arrangement')" onmouseover = "turnon('music-arrangement')" title="music-arrangement" onmouseout = "turnoff('music-arrangement')">Music Arrangement</div>
+				<div class="technical" onclick = "popup('data-science','Data Science')" onmouseover = "turnon('data-science')" title="data-science" onmouseout = "turnoff('data-science')">Data Science</div>
+				<div class="technical" onclick = "popup('business-analytics','Business Analytics')" onmouseover = "turnon('business-analytics')" title="business-analytics" onmouseout = "turnoff('business-analytics')">Business Analytics</div>
+				<div class="technical" onclick = "popup('oop','Object-Oriented Programming')" onmouseover = "turnon('oop')" title="oop" onmouseout = "turnoff('oop')">OOP</div>
+				<div class="tools" onclick = "popup('sql','SQL')" onmouseover = "turnon('sql')" title="sql" onmouseout = "turnoff('sql')">SQL</div>
+				<div class="tools" onclick = "popup('musescore','Musescore')" onmouseover = "turnon('musescore')" title="musescore" onmouseout = "turnoff('musescore')">MuseScore</div>
+				<div class="tools" onclick = "popup('github','Github')" onmouseover = "turnon('github')" title="github" onmouseout = "turnoff('github')">GitHub</div>
+				<div class="technical" onclick = "popup('mathematical-modeling','Mathematical Modeling')" onmouseover = "turnon('mathematical-modeling')" title="mathematical-modeling" onmouseout = "turnoff('mathematical-modeling')">Mathematical Modeling</div>
+				<div class="technical" onclick = "popup('cloud-computing','Cloud Computing')" onmouseover = "turnon('cloud-computing')" title="cloud-computing" onmouseout = "turnoff('cloud-computing')">Cloud Computing</div>
+				<div class="tools" onclick = "popup('g-suite','Google Suite')" onmouseover = "turnon('g-suite')" title="g-suite" onmouseout = "turnoff('g-suite')">G Suite</div>
+				<div class="tools" onclick = "popup('desmos','Desmos Graphing Calculator')" onmouseover = "turnon('desmos')" title="desmos" onmouseout = "turnoff('desmos')">Desmos</div>
+				<div class="tools" onclick = "popup('html','HTML')" onmouseover = "turnon('html')" title="html" onmouseout = "turnoff('html')">HTML</div>
+				<div class="tools" onclick = "popup('css','CSS')" onmouseover = "turnon('css')" title="css" onmouseout = "turnoff('css')">CSS</div>
+				<div class="tools" onclick = "popup('java','Java Programming')" onmouseover = "turnon('java')" title="java" onmouseout = "turnoff('java')">Java</div>
+				<div class="tools" onclick = "popup('microsoft-office','Microsoft Office')" onmouseover = "turnon('microsoft-office')" title="microsoft-office" onmouseout = "turnoff('microsoft-office')">Microsoft Office</div>
+				<div class="tools" onclick = "popup('r','R Programming')" onmouseover = "turnon('r')" title="r" onmouseout = "turnoff('r')">R</div>
+				<div class="tools" onclick = "popup('jupyter','Jupyter')" onmouseover = "turnon('jupyter')" title="jupyter" onmouseout = "turnoff('jupyter')">Jupyter</div>
+				<div class="tools" onclick = "popup('javascript','JavaScript')" onmouseover = "turnon('javascript')" title="javascript" onmouseout = "turnoff('javascript')">JavaScript</div>
+				<div class="soft" onclick = "popup('hyperproductivity','Hyperproductivity')" onmouseover = "turnon('hyperproductivity')" title="hyperproductivity" onmouseout = "turnoff('hyperproductivity')">Hyperproductivity</div>
+				<div class="technical" onclick = "popup('robotics','Robotics')" onmouseover = "turnon('robotics')" title="robotics" onmouseout = "turnoff('robotics')">Robotics</div>
+				<div class="soft" onclick = "popup('mandarin','Mandarin')" onmouseover = "turnon('mandarin')" title="mandarin" onmouseout = "turnoff('mandarin')">Mandarin</div>
+				<!-- <div class="technical" onclick = "popup('analytical-reasoning')" onmouseover = "turnon('analytical-reasoning')" title="analytical-reasoning" onmouseout = "turnoff('analytical-reasoning')">Analytical Reasoning</div> -->
+				<div class="soft" onclick = "popup('api','API')" onmouseover = "turnon('api')" title="api" onmouseout = "turnoff('api')">API</div>
+				<!-- <div class="soft" onclick = "popup('mentoring')" onmouseover = "turnon('mentoring')" title="mentoring" onmouseout = "turnoff('mentoring')">Mentoring</div> -->
+				<div class="tools" onclick = "popup('google-apps-script','Google Apps Script')" onmouseover = "turnon('google-apps-script')" title="google-apps-script" onmouseout = "turnoff('google-apps-script')">Google Apps Script</div>
+				<div class="technical" onclick = "popup('sharepoint-development','Sharepoint Development')" onmouseover = "turnon('sharepoint-development')" title="sharepoint-development" onmouseout = "turnoff('sharepoint-development')">Sharepoint Development</div>
+				<!-- <div class="soft" onclick = "popup('written-communication')" onmouseover = "turnon('written-communication')" title="written-communication" onmouseout = "turnoff('written-communication')">Written Communication</div> -->
+				<div class="tools" onclick = "popup('sublime','Sublime')" onmouseover = "turnon('sublime')" title="sublime" onmouseout = "turnoff('sublime')">Sublime</div>
+				<div class="tools" onclick = "popup('power-bi','Power BI')" onmouseover = "turnon('power-bi')" title="power-bi" onmouseout = "turnoff('power-bi')">Power BI</div>
+				<div class="tools" onclick = "popup('telegram-bots','Telegram Bots')" onmouseover = "turnon('telegram-bots')" title="telegram-bots" onmouseout = "turnoff('telegram-bots')">Telegram Bots</div>
+				<div class="technical" onclick = "popup('machine-learning','Machine Learning')" onmouseover = "turnon('machine-learning')" title="machine-learning" onmouseout = "turnoff('machine-learning')">Machine Learning</div>
+				<div class="tools" onclick = "popup('tableau','Tableau')" onmouseover = "turnon('tableau')" title="tableau" onmouseout = "turnoff('tableau')">Tableau</div>
+				<div class="soft" onclick = "popup('leadership','Leadership')" onmouseover = "turnon('leadership')" title="leadership" onmouseout = "turnoff('leadership')">Leadership</div>
+				<div class="soft" onclick = "popup('music-composition','Music Composition')" onmouseover = "turnon('music-composition')" title="music-composition" onmouseout = "turnoff('music-composition')">Music Composition</div>
+				<!-- <div class="technical" onclick = "popup('graphic-design')" onmouseover = "turnon('graphic-design')" title="graphic-design" onmouseout = "turnoff('graphic-design')">Graphic Design</div> -->
+				<div class="tools" onclick = "popup('jquery','JQuery')" onmouseover = "turnon('jquery')" title="jquery" onmouseout = "turnoff('jquery')">JQuery</div>
+				<!-- <div class="soft" onclick = "popup('documentation')" onmouseover = "turnon('documentation')" title="documentation" onmouseout = "turnoff('documentation')">Documentation</div> -->
+				<div class="technical" onclick = "popup('data-governance','Data Governance')" onmouseover = "turnon('data-governance')" title="data-governance" onmouseout = "turnoff('data-governance')">Data Governance</div>
+				<div class="tools" onclick = "popup('photoshop','Photoshop')" onmouseover = "turnon('photoshop')" title="photoshop" onmouseout = "turnoff('photoshop')">Photoshop</div>
+				<!-- <div class="technical" onclick = "popup('nlp')" onmouseover = "turnon('nlp')" title="nlp" onmouseout = "turnoff('nlp')">NLP</div> -->
+				<div class="soft" onclick = "popup('malay','Malay')" onmouseover = "turnon('malay')" title="malay" onmouseout = "turnoff('malay')">Malay</div>
+				<div class="technical" onclick = "popup('business-intelligence','Business Intelligence')" onmouseover = "turnon('business-intelligence')" title="business-intelligence" onmouseout = "turnoff('business-intelligence')">Business Intelligence</div>
+				<!-- <div class="soft" onclick = "popup('minute-taking')" onmouseover = "turnon('minute-taking')" title="minute-taking" onmouseout = "turnoff('minute-taking')">Minute-taking</div> -->
+				<div class="technical" onclick = "popup('artificial-intelligence','Artificial Intelligence')" onmouseover = "turnon('artificial-intelligence')" title="artificial-intelligence" onmouseout = "turnoff('artificial-intelligence')">Artificial Intelligence</div>
+				<!-- <div class="soft" onclick = "popup('agile-framework')" onmouseover = "turnon('agile-framework')" title="agile-framework" onmouseout = "turnoff('agile-framework')">Agile Framework</div> -->
+				<!-- <div class="tools" onclick = "popup('dax')" onmouseover = "turnon('dax')" title="dax" onmouseout = "turnoff('dax')">DAX</div> -->
+				<div class="technical" onclick = "popup('data-modeling','Data Modeling')" onmouseover = "turnon('data-modeling')" title="data-modeling" onmouseout = "turnoff('data-modeling')">Data Modeling</div>
+				<div class="tools" onclick = "popup('ssms','SQL Server Management Studio')" onmouseover = "turnon('ssms')" title="ssms" onmouseout = "turnoff('ssms')">SSMS</div>
+				<!-- <div class="technical" onclick = "popup('audio-analysis')" onmouseover = "turnon('audio-analysis')" title="audio-analysis" onmouseout = "turnoff('audio-analysis')">Audio Analysis</div> -->
+				<div class="soft" onclick = "popup('video-editing','Video Editing')" onmouseover = "turnon('video-editing')" title="video-editing" onmouseout = "turnoff('video-editing')">Video Editing</div>
+				<div class="tools" onclick = "popup('anaconda','Anaconda')" onmouseover = "turnon('anaconda')" title="anaconda" onmouseout = "turnoff('anaconda')">Anaconda</div>
+				<div class="tools" onclick = "popup('c-sharp','C# Programming')" onmouseover = "turnon('c-sharp')" title="c-sharp" onmouseout = "turnoff('c-sharp')">C#</div>
+				<div class="tools" onclick = "popup('aws','Amazon Web Services')" onmouseover = "turnon('aws')" title="aws" onmouseout = "turnoff('aws')">AWS</div>
+				<div class="tools" onclick = "popup('er-studio','ER Studio')" onmouseover = "turnon('er-studio')" title="er-studio" onmouseout = "turnoff('er-studio')">ER Studio</div>
+				<div class="soft" onclick = "popup('japanese','Japanese')" onmouseover = "turnon('japanese')" title="japanese" onmouseout = "turnoff('japanese')">Japanese</div>
+				<div class="tools" onclick = "popup('php','PHP Programming')" onmouseover = "turnon('php')" title="php" onmouseout = "turnoff('php')">PHP</div>
+				<!-- <div class="technical" onclick = "popup('software-testing')" onmouseover = "turnon('software-testing')" title="software-testing" onmouseout = "turnoff('software-testing')">Software Testing</div> -->
+				<div class="tools" onclick = "popup('vs-code','Visual Studio Code')" onmouseover = "turnon('vs-code')" title="vs-code" onmouseout = "turnoff('vs-code')">VS Code</div>
+				<div class="soft" onclick = "popup('music-production','music-production')" onmouseover = "turnon('music-production')" title="music-production" onmouseout = "turnoff('music-production')">Music Production</div>
+				<div class="tools" onclick = "popup('ruby','Ruby Programming')" onmouseover = "turnon('ruby')" title="ruby" onmouseout = "turnoff('ruby')">Ruby</div>
+				<div class="tools" onclick = "popup('qgis','QGIS')" onmouseover = "turnon('qgis')" title="qgis" onmouseout = "turnoff('qgis')">QGIS</div>
+				<div class="tools" onclick = "popup('vba','Visual Basic for Applications')" onmouseover = "turnon('vba')" title="vba" onmouseout = "turnoff('vba')">Visual Basic (VBA)</div>
+				<!-- <div class="technical" onclick = "popup('seo')" onmouseover = "turnon('seo')" title="seo" onmouseout = "turnoff('seo')">SEO</div> -->
+				<div class="tools" onclick = "popup('azure','Microsoft Azure')" onmouseover = "turnon('azure')" title="azure" onmouseout = "turnoff('azure')">Azure</div>
+				<div class="soft" onclick = "popup('french','French')" onmouseover = "turnon('french')" title="french" onmouseout = "turnoff('french')">French</div>
+				<div class="tools" onclick = "popup('cpp','C++ Programming')" onmouseover = "turnon('cpp')" title="cpp" onmouseout = "turnoff('cpp')">C++</div>
+				<!-- <div class="technical" onclick = "popup('web-analysis')" onmouseover = "turnon('web-analysis')" title="web-analysis" onmouseout = "turnoff('web-analysis')">Web Analytics</div> -->
+				<div class="soft" onclick = "popup('korean','Korean')" onmouseover = "turnon('korean')" title="korean" onmouseout = "turnoff('korean')">Korean</div>
+				<!-- <div class="tools" onclick = "popup('m')" onmouseover = "turnon('m')" title="m" onmouseout = "turnoff('m')">M</div> -->
+				<div class="soft" onclick = "popup('spanish','Spanish')" onmouseover = "turnon('spanish')" title="spanish" onmouseout = "turnoff('spanish')">Spanish</div>
+				<!-- <div class="tools" onclick = "popup('flstudio')" onmouseover = "turnon('flstudio')" title="flstudio" onmouseout = "turnoff('flstudio')">FL Studio</div> -->
+				<div class="tools" onclick = "popup('swift','Swift Programming')" onmouseover = "turnon('swift')" title="swift" onmouseout = "turnoff('swift')">Swift</div>
+				<div class="tools" onclick = "popup('robotc','RobotC Programming')" onmouseover = "turnon('robotc')" title="robotc" onmouseout = "turnoff('robotc')">RobotC</div>
+				<!-- <div class="technical" onclick = "popup('data-architecture')" onmouseover = "turnon('data-architecture')" title="data-architecture" onmouseout = "turnoff('data-architecture')">Data Architecture</div> -->
 				<!-- Netlify, Linux, Geopandas, Seaborn, Tensorflow, Flask, Django, OpenCV -->
 			</article2>
 			<!-- <h3 id="scores">MUSIC SHEETS</h3>

@@ -420,11 +420,46 @@ div > div2:nth-child(1) {
 		margin: 0;
 		padding: 2vh 10px;
 	}
+	
 	.entry:hover,
 	.technical:hover,
 	.soft:hover,
 	.tools:hover {
 		transform: scale(1.00);
+	}
+
+	/* #pop-outer {
+		display: none;
+	} */
+
+	#pop-outer {
+		width: 80vw;
+		height: auto;
+		margin: 10vw 10vw;
+		position: fixed;
+		background: black;
+		padding: 2rem;
+		width: 80vw;
+		height: auto;
+		z-index: 3;
+		border: 1px solid var(--entryhover);
+		display: none;
+	}
+
+	#pop-outer > button {
+		right: 2rem;
+		background-color: transparent;
+		color: white;
+		border: none;
+		position: absolute;
+	}
+
+	#pop-outer > button:hover {
+		color: var(--link);
+	}
+
+	#pop-title {
+		color: white;
 	}
 }
 
@@ -444,6 +479,36 @@ div > div2:nth-child(1) {
 
 	#other {
 		display: none;
+	}
+
+	#pop-outer {
+		width: 80vw;
+		height: auto;
+		margin: 10vw 10vw;
+		position: fixed;
+		background: black;
+		padding: 2rem;
+		width: 80vw;
+		height: auto;
+		z-index: 3;
+		border: 1px solid var(--entryhover);
+		display: none;
+	}
+
+	#pop-outer > button {
+		right: 2rem;
+		background-color: transparent;
+		color: white;
+		border: none;
+		position: absolute;
+	}
+
+	#pop-outer > button:hover {
+		color: var(--link);
+	}
+
+	#pop-title {
+		color: white;
 	}
 }
 
