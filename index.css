@@ -450,7 +450,7 @@ div > div2:nth-child(1) {
 	}
 
 	#pop-outer > button {
-		right: 2rem;
+		right: 1rem;
 		background-color: transparent;
 		color: white;
 		border: none;
@@ -499,7 +499,7 @@ div > div2:nth-child(1) {
 	}
 
 	#pop-outer > button {
-		right: 2rem;
+		right: 1rem;
 		background-color: transparent;
 		color: white;
 		border: none;
