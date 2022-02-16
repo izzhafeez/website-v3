@@ -28,9 +28,11 @@ html {
 	overflow-x: hidden;
 }
 
-::-webkit-scrollbar-corner {
-	background: rgba(0,0,0,0);
-}
+::-webkit-scrollbar-corner {background: rgba(0,0,0,0);}
+::-webkit-scrollbar {width: 3px;}
+::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+::-webkit-scrollbar-thumb {background: rgba(20,167,108,0.7);-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);}
+::-webkit-scrollbar-thumb:window-inactive {background: rgba(20,167,108,0.7);}
 
 body {
 	margin: 0;
@@ -298,11 +300,19 @@ footer > *:nth-child(7):hover {
 
 summary {
 	margin: 2rem 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 12; /* number of lines to show */
+			line-clamp: 12; 
+	-webkit-box-orient: vertical;
 }
 
 aside {
 	padding: 2vh 2rem;
-	margin: 4vw 0;
+	margin: 2vw 0;
 }
 
 main {
@@ -410,7 +420,7 @@ div > div2:nth-child(1) {
 		grid-template-columns: repeat(5,1fr);
 	}
 	aside.landing {
-		height: calc(96vh-8vw);
+		height: calc(96vh-0vw);
 		grid-column: 1/3;
 		display: grid;
 		grid-template-rows: auto 1fr auto;
