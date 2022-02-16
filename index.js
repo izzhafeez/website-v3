@@ -67,16 +67,21 @@ function turnoff(id) {
 }
 
 function searchFunction() {
-	var input, filter, article, div, articleEntry, text;
+	var input, filter, article, div, articleEntry, text, passed;
 	input = document.getElementById("searcherInput");
 	filter = input.value.toUpperCase();
+	const filterArray = filter.split(" ");
 	article = document.getElementById("skills-article");
 	div = article.getElementsByTagName("div");
 	var count = 0;
 	for (i = 0; i < div.length; i++) {
 		articleEntry = document.getElementById(div[i].getAttribute("title"));
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		if (text.toUpperCase().indexOf(filter) > -1) {
+		passed = false;
+		filterArray.forEach(item => {
+			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+		})
+		if (passed) {
 			div[i].style.display = "";
 			count++;
 		} else {
@@ -88,7 +93,11 @@ function searchFunction() {
 	for (i = 0; i < div.length; i++) {
 		articleEntry = document.getElementById(div[i].getAttribute("title"));
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		if (text.toUpperCase().indexOf(filter) > -1) {
+		passed = false;
+		filterArray.forEach(item => {
+			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+		})
+		if (passed) {
 			div[i].style.display = "";
 			count++;
 		} else {
@@ -100,7 +109,11 @@ function searchFunction() {
 	for (i = 0; i < div.length; i++) {
 		articleEntry = document.getElementById(div[i].getAttribute("title"));
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		if (text.toUpperCase().indexOf(filter) > -1) {
+		passed = false;
+		filterArray.forEach(item => {
+			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+		})
+		if (passed) {
 			div[i].style.display = "";
 			count++;
 		} else {
@@ -112,7 +125,11 @@ function searchFunction() {
 	for (i = 0; i < div.length; i++) {
 		articleEntry = document.getElementById(div[i].getAttribute("title"));
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		if (text.toUpperCase().indexOf(filter) > -1) {
+		passed = false;
+		filterArray.forEach(item => {
+			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+		})
+		if (passed) {
 			div[i].style.display = "";
 			count++;
 		} else {
@@ -124,7 +141,11 @@ function searchFunction() {
 	for (i = 0; i < div.length; i++) {
 		articleEntry = document.getElementById(div[i].getAttribute("title"));
 		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		if (text.toUpperCase().indexOf(filter) > -1) {
+		passed = false;
+		filterArray.forEach(item => {
+			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+		})
+		if (passed) {
 			div[i].style.display = "";
 			count++;
 		} else {
