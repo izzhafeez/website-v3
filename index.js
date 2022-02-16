@@ -71,87 +71,110 @@ function searchFunction() {
 	input = document.getElementById("searcherInput");
 	filter = input.value.toUpperCase();
 	const filterArray = filter.split(" ");
-	article = document.getElementById("skills-article");
-	div = article.getElementsByTagName("div");
-	var count = 0;
-	for (i = 0; i < div.length; i++) {
-		articleEntry = document.getElementById(div[i].getAttribute("title"));
-		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		passed = false;
-		filterArray.forEach(item => {
-			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-		})
-		if (passed) {
-			div[i].style.display = "";
-			count++;
-		} else {
-			div[i].style.display = "none";
+	const articleArray = ["skills", "experience", "projects", "certifications", "awards"];
+	articleArray.forEach(articleName => {
+		article = document.getElementById(articleName + "-article");
+		div = article.getElementsByTagName("div");
+		var count = 0;
+		for (i = 0; i < div.length; i++) {
+			articleEntry = document.getElementById(div[i].getAttribute("title"));
+			text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+			passed = false;
+			filterArray.forEach(item => {
+				passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+			})
+			if (filter == "") {
+				passed = true;
+			}
+			if (passed) {
+				div[i].style.display = "";
+				count++;
+			} else {
+				div[i].style.display = "none";
+			}
 		}
-	}
-	article = document.getElementById("experience-article");
-	div = article.getElementsByClassName("entry");
-	for (i = 0; i < div.length; i++) {
-		articleEntry = document.getElementById(div[i].getAttribute("title"));
-		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		passed = false;
-		filterArray.forEach(item => {
-			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-		})
-		if (passed) {
-			div[i].style.display = "";
-			count++;
-		} else {
-			div[i].style.display = "none";
-		}
-	}
-	article = document.getElementById("projects-article");
-	div = article.getElementsByClassName("entry");
-	for (i = 0; i < div.length; i++) {
-		articleEntry = document.getElementById(div[i].getAttribute("title"));
-		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		passed = false;
-		filterArray.forEach(item => {
-			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-		})
-		if (passed) {
-			div[i].style.display = "";
-			count++;
-		} else {
-			div[i].style.display = "none";
-		}
-	}
-	article = document.getElementById("certifications-article");
-	div = article.getElementsByClassName("entry");
-	for (i = 0; i < div.length; i++) {
-		articleEntry = document.getElementById(div[i].getAttribute("title"));
-		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		passed = false;
-		filterArray.forEach(item => {
-			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-		})
-		if (passed) {
-			div[i].style.display = "";
-			count++;
-		} else {
-			div[i].style.display = "none";
-		}
-	}
-	article = document.getElementById("awards-article");
-	div = article.getElementsByClassName("entry");
-	for (i = 0; i < div.length; i++) {
-		articleEntry = document.getElementById(div[i].getAttribute("title"));
-		text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-		passed = false;
-		filterArray.forEach(item => {
-			passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-		})
-		if (passed) {
-			div[i].style.display = "";
-			count++;
-		} else {
-			div[i].style.display = "none";
-		}
-	}
+	})
+	// article = document.getElementById("skills-article");
+	// div = article.getElementsByTagName("div");
+	// var count = 0;
+	// for (i = 0; i < div.length; i++) {
+	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
+	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+	// 	passed = false;
+	// 	filterArray.forEach(item => {
+	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+	// 	})
+	// 	if (passed) {
+	// 		div[i].style.display = "";
+	// 		count++;
+	// 	} else {
+	// 		div[i].style.display = "none";
+	// 	}
+	// }
+	// article = document.getElementById("experience-article");
+	// div = article.getElementsByClassName("entry");
+	// for (i = 0; i < div.length; i++) {
+	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
+	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+	// 	passed = false;
+	// 	filterArray.forEach(item => {
+	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+	// 	})
+	// 	if (passed) {
+	// 		div[i].style.display = "";
+	// 		count++;
+	// 	} else {
+	// 		div[i].style.display = "none";
+	// 	}
+	// }
+	// article = document.getElementById("projects-article");
+	// div = article.getElementsByClassName("entry");
+	// for (i = 0; i < div.length; i++) {
+	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
+	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+	// 	passed = false;
+	// 	filterArray.forEach(item => {
+	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+	// 	})
+	// 	if (passed) {
+	// 		div[i].style.display = "";
+	// 		count++;
+	// 	} else {
+	// 		div[i].style.display = "none";
+	// 	}
+	// }
+	// article = document.getElementById("certifications-article");
+	// div = article.getElementsByClassName("entry");
+	// for (i = 0; i < div.length; i++) {
+	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
+	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+	// 	passed = false;
+	// 	filterArray.forEach(item => {
+	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+	// 	})
+	// 	if (passed) {
+	// 		div[i].style.display = "";
+	// 		count++;
+	// 	} else {
+	// 		div[i].style.display = "none";
+	// 	}
+	// }
+	// article = document.getElementById("awards-article");
+	// div = article.getElementsByClassName("entry");
+	// for (i = 0; i < div.length; i++) {
+	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
+	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+	// 	passed = false;
+	// 	filterArray.forEach(item => {
+	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+	// 	})
+	// 	if (passed) {
+	// 		div[i].style.display = "";
+	// 		count++;
+	// 	} else {
+	// 		div[i].style.display = "none";
+	// 	}
+	// }
 	// article = document.getElementById("music-article");
 	// div = article.getElementsByClassName("entry");
 	// for (i = 0; i < div.length; i++) {
