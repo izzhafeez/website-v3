@@ -23,6 +23,7 @@
 	--tools: #C17C46;
 	/* --link: #FFE400; */
 	--link: var(--text);
+	--contrast: #FFC726;
 }
 
 html {
@@ -197,7 +198,7 @@ pre {
 }
 
 fn {
-	color: #0072CE;
+	color: var(--contrast);
 }
 
 quote {
@@ -209,14 +210,7 @@ section {
 	margin: 0 auto;
 }
 
-/* header {
-	font-family: Gothic,sans-serif;
-	font-size: 4rem;
-	line-height: 1.2;
-	color: var(--text);
-} */
-
-h1 {
+h1, header {
 	font-family: Gothic,sans-serif;
 	font-size: 3rem;
 	line-height: 1;
@@ -273,15 +267,9 @@ footer > * > img {
 	transition: transform 0.5s;
 }
 
-/* footer > *:nth-child(1) {
-	filter: invert(0);
+footer > *:nth-child(1) > img {
+	filter: invert(1);
 	transform: scale(0.7);
-} */
-
-footer > *:nth-child(1) {
-	/* filter: invert(0); */
-	/* color: white; */
-	/* transform: scale(0.7); */
 }
 
 footer > *:not(#searcher):hover > img {
