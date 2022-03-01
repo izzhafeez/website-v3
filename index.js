@@ -26,60 +26,27 @@ function popdown() {
 	document.getElementById("landing").style.opacity = 1;
 }
 
-function turnon(id) {
-	if (document.documentElement.clientWidth > 1200) {
-		document.getElementById(id).style.display = "block";
-		document.getElementById("default").style.display = "none";
-	} else {
-		// var obj = document.getElementById(id);
-		// obj.style.display = "block";
-		// obj.style.position = "fixed";
-		// obj.style.background = "#272727";
-		// obj.style.top = "0";
-		// obj.style.left = "0";
-		// obj.style.padding = "20px";
-		// obj.style.borderColor = "#C5C6C7";
-		// obj.style.borderWidth = "1px";
-		// obj.style.borderStyle = "solid";
-		// obj.style.zIndex = "10";
-		// obj.style.color = "#AAA";
-	}
-}
-
-function turnoff(id) {
-	if (document.documentElement.clientWidth > 1200) {
-		document.getElementById(id).style.display = "none";
-		document.getElementById("default").style.display = "block";
-	} else {
-		// var obj = document.getElementById(id);
-		// document.getElementById("default").style.display = "block";
-		// obj.style.display = "none";
-		// obj.style.position = "relative";
-		// obj.style.background = "none";
-		// obj.style.top = "none";
-		// obj.style.left = "none";
-		// obj.style.padding = "0";
-		// obj.style.borderColor = "none";
-		// obj.style.borderWidth = "none";
-		// obj.style.borderStyle = "none";
-		// obj.style.zIndex = "none";
+function turnon(id, name) {
+	if (document.documentElement.clientWidth > 1200 || id == "default") {
+		var replaceWith = "<h1>" + name.toUpperCase() + " </h1>" + document.getElementById(id).innerHTML;
+		document.getElementById("summary").innerHTML = replaceWith;
 	}
 }
 
 function searchFunction() {
-	var input, filter, article, div, articleEntry, text, passed;
+	var input, filter;
 	input = document.getElementById("searcherInput");
 	filter = input.value.toUpperCase();
 	const filterArray = filter.split(" ");
-	const articleArray = ["skills", "experience", "projects", "certifications", "awards"];
+	const articleArray = ["experience", "projects", "certifications", "awards", "skills"];
 	articleArray.forEach(articleName => {
-		article = document.getElementById(articleName + "-article");
-		div = article.getElementsByTagName("div");
+		var article = document.getElementById(articleName + "-article");
+		var div = article.querySelectorAll("[title]");
 		var count = 0;
 		for (i = 0; i < div.length; i++) {
-			articleEntry = document.getElementById(div[i].getAttribute("title"));
-			text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-			passed = false;
+			var articleEntry = document.getElementById(div[i].getAttribute("title"));
+			var text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+			var passed = false;
 			filterArray.forEach(item => {
 				passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
 			})
