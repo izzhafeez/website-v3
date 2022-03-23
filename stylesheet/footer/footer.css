@@ -1,0 +1,50 @@
+@import "searcher.css";
+
+footer {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer > *:not(#searcher) {
+	display: grid;
+	place-items: center;
+	filter: invert(1);
+	height: 3rem;
+}
+
+footer > * > img {
+	transition: transform 0.5s;
+}
+
+footer > *:nth-child(1) > img {
+	filter: invert(1);
+	transform: scale(0.7);
+}
+
+footer > *:not(#searcher):hover > img {
+	transform: scale(1.5) rotate(360deg);
+}
+
+footer > *:nth-child(2):hover {
+	filter: invert(25%) sepia(71%) saturate(6712%) hue-rotate(200deg) brightness(92%) contrast(92%);
+}
+
+footer > *:nth-child(3):hover {
+	filter: invert(26%) sepia(51%) saturate(7464%) hue-rotate(351deg) brightness(88%) contrast(134%);
+}
+
+footer > *:nth-child(4):hover {
+	filter: invert(47%) sepia(49%) saturate(5181%) hue-rotate(323deg) brightness(90%) contrast(99%);
+}
+
+footer > *:nth-child(5):hover {
+	filter: invert(45%) sepia(77%) saturate(6277%) hue-rotate(347deg) brightness(103%) contrast(84%);
+}
+
+footer > *:nth-child(6):hover {
+	filter: invert(0.7);
+}
+
+footer > *:nth-child(7):hover {
+	filter: invert(37%) sepia(95%) saturate(654%) hue-rotate(172deg) brightness(83%) contrast(96%);
+}

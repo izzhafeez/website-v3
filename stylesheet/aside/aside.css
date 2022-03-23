@@ -1,0 +1,24 @@
+aside {
+	padding: 2vh 2rem;
+	margin: 2vw 0;
+}
+
+@media screen and (min-width: 1200px) {
+    aside.landing {
+		height: calc(96vh-0vw);
+		grid-column: 1/3;
+		display: grid;
+		grid-template-rows: 1fr auto;
+	}
+    aside:not(.landing) {
+        margin: 0;
+		padding: 2vh 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    aside {
+		margin: 0;
+		padding: 2vh 10px 0;
+	}
+}

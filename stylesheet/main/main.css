@@ -1,0 +1,30 @@
+@import "label.css";
+@import "entry.css";
+@import "music.css";
+@import "scrollbar.css";
+
+main {
+	padding: 2vh 2rem;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+    main.landing {
+		margin-top: 2vh;
+		height: 96vh;
+		overflow-y: scroll;
+		grid-column: 3/6;
+	}
+    main:not(.landing) {
+		margin: 0;
+		padding: 2vh 10px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+		margin: 0;
+		padding: 2vh 10px 0;
+	}
+}

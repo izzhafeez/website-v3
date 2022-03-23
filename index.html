@@ -28,15 +28,11 @@
 	</pop>
 	<section class="landing" id="landing">
 		<aside class="landing">
-			<!-- <header>My Name Izz Hafeez</header> -->
 			<summary id="summary"></summary>
 			<footer>
-				<!-- <a href="#"><img src="img/desmosito bw.png" style="height:3rem;"></a> -->
 				<div id="searcher">
 			        <input type="text" id="searcherInput" onkeyup="searchFunction()" placeholder="Search for keywords..." title="Type in some keywords">
-			        <!-- <img src="img/searchicon.svg" alt="search" height="20"> -->
 			    </div>
-				<!-- <input type="text" id="searcher" onkeyup="searchFunction()" placeholder="Search for keywords.." title="Type in some keywords"> -->
 				<a href="https://www.linkedin.com/in/izzhafeez/"><img src="img/linkedin.svg" alt="LinkedIn" height="20" value="#0A66C2"></a>
 				<a href="https://www.youtube.com/c/izzhafeez"><img src="img/youtube.svg" alt="Youtube" height="20" value="#FF0000"></a>
 				<a href="https://www.instagram.com/mynameizzhafeez/?hl=en"><img src="img/instagram.svg" alt="Instagram" height="20" value="#E4405F"></a>
@@ -47,7 +43,7 @@
 		</aside>
 		<main class="landing">
 			<h3 id="experience">EXPERIENCE</h3>
-			<article id="experience-article">
+			<entry id="experience-article">
 				<div class="entry" onmouseover = "turnon('mom','Ministry of Manpower')" onclick = "popup('mom','Ministry of Manpower')" title="mom">
 					<div>Feb'21 - Jul'21</div>
 					<div>Management Support</div>
@@ -56,7 +52,7 @@
 				</div>
 				<div class="entry" onmouseover = "turnon('scdf','Singapore Civil Defence Force')" onclick = "popup('scdf','Singapore Civil Defence Force')" title="scdf">
 					<div>Feb'19 - Jan'21</div>
-					<div>Data Analytics  <span style="color:#FFC726;">★</span></div>
+					<div>Data Analytics  <star>★</star></div>
 					<div>Singapore Civil Defence Force</div>
 					<div>Developed, maintained and ran models to optimise the placement of ambulances</div>
 				</div>
@@ -66,87 +62,72 @@
 					<div>Victoria Robotics-Makers' Club</div>
 					<div>Taught and facilitated programming at Victoria Junior College</div>
 				</div>
-			</article>
+			</entry>
 			<h3 id="projects">PROJECTS</h3>
-			<article id="projects-article">
+			<entry id="projects-article">
+				<div class="entry" onmouseover = "turnon('blog','Personal Blog')" onclick = "popup('blog','Personal Blog')" title="blog">
+					<div2><a href="blog.html">Personal Blog</a> <star>★</star></div2>
+					<div2>Click here for module reviews and my experiences in coding, music, languages and learning</div2>
+				</div>
 				<div class="entry" onmouseover = "turnon('malls','MALLS Card Game')" onclick = "popup('malls','MALLS Card Game')" title="malls">
-					<div2><a href="projects/malls.html">MALLS Card Game</a> <span style="color:#FFC726;">★</span></div2>
+					<div2><a href="malls/game.html">MALLS Card Game</a> <star>★</star></div2>
 					<div2>Statistics-driven card game based on shopping malls, using parsed data from numerous sources</div2>
+				</div>
+				<div class="entry" onmouseover = "turnon('singapore', 'Singapore Django App')" onclick = "popup('singapore', 'Singapore Django App')" title="singapore">
+					<div2><a href="https://github.com/mynameizzhafeez/singapore">Singapore Django App</a></div2>
+					<div2>Geospatial application for managing features and locations in Singapore</div2>
 				</div>
 				<!-- <div class="entry" onmouseover = "turnon('telegram-bots')" onclick = "popup('telegram-bots')" title="telegram-bots">
 					<div>Google Apps Script, API</div>
 					<div><a href="projects.html#telegram">Telegram Bots</a></div>
 					<div>I've created bots that assist in searching for vocabulary, idioms and Halal food</div>
-				</div>
-				<div class="entry" onmouseover = "turnon('python-packages')" onclick = "popup('python-packages')" title="python-packages">
-					<div>Python, API</div>
-					<div><a href="projects.html#python">Modules & Packages</a></div>
-					<div>Designed code that facilitates web scraping, language-learning and geospatial analytics</div>
 				</div> -->
-				<div class="entry" onmouseover = "turnon('geo-py','Geospatial Package')" onclick = "popup('geo-py','Geospatial Package')" title="geo-py">
-					<div2><a href="projects/geo.html">Geospatial</a></div2>
-					<div2>Compiles data relating to buses, MRTs, roads, altitude, parking and outputs harmonised datasets</div2>
+				<div class="entry" onmouseover = "turnon('wilcoxon-package','Wilcoxon Python Library')" onclick = "popup('wilcoxon-package','Wilcoxon Python Library')" title="wilcoxon-package">
+					<div2><a href="https://github.com/mynameizzhafeez/wilcoxon">Wilcoxon Library</a></div2>
+					<div2>Python packages that facilitate <a href="projects/spiderman.html">web scraping</a>, <a href="projects/language.html">language learning</a>, <a href="projects/geo.html">geospatial analytics</a>, <a href="projects/chords.html">music creation</a> and <a href="projects/telegram.html">Telegram handling</a></div2>
 				</div>
-				<div class="entry" onmouseover = "turnon('language-py','Language Package')" onclick = "popup('language-py','Language Package')" title="language-py">
-					<div2><a href="projects/language.html">Language</a></div2>
-					<div2>Facilitates the language-learning process by outputting sample sentences, transliterations and usages</div2>
-				</div>
-				<div class="entry" onmouseover = "turnon('spiderman-py','Spiderman Package')" onclick = "popup('spiderman-py','Spiderman Package')" title="spiderman-py">
-					<div2><a href="projects/spiderman.html">Spiderman</a></div2>
-					<div2>Facilitates web scraping and spidering across sites, and allows for the merging of similar tables within a page</div2>
-				</div>
-				<!-- <div class="entry"  onmouseover = "turnon('utils-py')" onclick = "popup('utils-py')" title="utils-py">
-					<div2><a href="projects/utils.html">Utils</a></div2>
-					<div2>Contains useful shorthand functions to perform frequently-used but long-winded operations</div2>
-				</div> -->
-				<div class="entry" onmouseover = "turnon('telegram-py','Telegram Package')" onclick = "popup('telegram-py','Telegram Package')" title="telegram-py">
-					<div2><a href="projects/telegram.html">Telegram</a></div2>
-					<div2>Sends customisable progress updates for your loops directly through a telegram bot, allowing for more freedom when running long code</div2>
-				</div>
-				<div class="entry" onmouseover = "turnon('chords-py','Chords Package')" onclick = "popup('chords-py','Chords Package')" title="chords-py">
-					<div2><a href="projects/chords.html">Chords</a></div2>
-					<div2>Given a song title and artist, return its chord progression, as arranged by humans</div2>
-				</div>
-				<!-- <div class="entry"  onmouseover = "turnon('sheets-py')" onclick = "popup('sheets-py')" title="sheets-py">
-					<div2><a href="projects/sheets.html">Sheets</a></div2>
-					<div2>Facilitates the extraction of data from my Google Sheets database</div2>
-				</div> -->
-			</article>
+			</entry>
 			<h3 id="certifications">CERTIFICATIONS</h3>
-			<article3 id="certifications-article">
+			<entry id="certifications-article">
 				<div class="entry" onmouseover = "turnon('java-course','Java Development Course')" onclick = "popup('java-course','Java Development Course')" title="java-course">
-					<div>In Progress (17 hours)</div>
-					<div>Java Development</div>
+					<div>Mar'22 (17 hours)</div>
+					<div><a href="https://www.udemy.com/certificate/UC-ea3408de-bd00-4eba-96bf-3ab78ac4bda8/">Java Development</a></div>
 					<div>Udemy</div>
+					<div>A Java course teaching Java functionality and OOP practices</div>
 				</div>
 				<div class="entry" onmouseover = "turnon('fullstack','Fullstack Web Development Course')" onclick = "popup('fullstack','Fullstack Web Development Course')" title="fullstack">
 					<div>Sep'21 (67 hours)</div>
-					<div>Fullstack Web Development</div>
+					<div><a href="https://www.udemy.com/certificate/UC-edbe5bd6-e40e-4227-9449-7d161eade40e/">Web Development</a></div>
 					<div>Udemy</div>
+					<div>A comprehensive course teaching fullstack web development</div>
 				</div>
 				<div class="entry" onmouseover = "turnon('mandarin','HSK 5 Proficiency Test')" onclick = "popup('mandarin','HSK 5 Proficiency Test')" title="mandarin">
 					<div>Apr'21</div>
-					<div>HSK 5 Chinese Proficiency Test</div>
+					<div><a href="http://www.chinesetest.cn/queryScore.do?sid=c2tActR9Wb%27d1ab44da677955ce3b5c9231ff65ea765c6b8d2a3849b500%2724d7sWsQ5nVUQSwD">HSK 5</a> <star>★</star></div>
 					<div>Hanban Confucius Institute</div>
+					<div>Standardised chinese proficiency test for non-native speakers</div>
 				</div>
 				<div class="entry" onmouseover = "turnon('tensorflow','Tensorflow Course')" onclick = "popup('tensorflow','Tensorflow Course')" title="tensorflow">
 					<div>Oct'20 (20 hours)</div>
-					<div>Deep Learning with Tensorflow</div>
+					<div><a href="https://courses.edx.org/certificates/06e2f6469b7f48eca94f244e3ed0de42">Deep Learning</a></div>
 					<div>IBM</div>
+					<div>A Tensorflow course teaching deep learning theory</div>
 				</div>
 				<div class="entry" onmouseover = "turnon('harvard-data-science','Data Science Course')" onclick = "popup('harvard-data-science','Data Science Course')" title="harvard-data-science">
 					<div>Feb'20 (185 hours)</div>
-					<div>Data Science <span style="color:#FFC726;">★</span></div>
+					<div><a href="https://credentials.edx.org/credentials/ed430b9eb6d3496fb6fc8257b0e2a90a/">Data Science</a> <star>★</star></div>
 					<div>HarvardX</div>
+					<div>An R programming course teaching data science concepts</div>
 				</div>
 				<div class="entry" onmouseover = "turnon('python-for-everybody','Python Course')" onclick = "popup('python-for-everybody','Python Course')" title="python-for-everybody">
 					<div>Jan'17 (104 hours)</div>
-					<div>Python for Everybody</div>
+					<div><a href="https://www.coursera.org/account/accomplishments/specialization/B4URY8QXHQRW">Python for Everybody</a></div>
 					<div>University of Michigan</div>
+					<div>A Python course teaching topics in OOP and database interaction</div>
 				</div>
-			</article3>
+			</entry>
 			<h3 id="awards">TOP AWARDS</h3>
-			<article3 id="awards-article">
+			<awards-entry id="awards-article">
 				<div class="entry" onmouseover = "turnon('smo','Singapore Mathematical Olympiad')" onclick = "popup('smo','Singapore Mathematical Olympiad')" title="smo">
 					<div>Silver</div>
 					<div>Singapore Mathematical Olympiad</div>
@@ -167,7 +148,7 @@
 					<div>Other Awards</div>
 					<div></div>
 				</div>
-			</article3>
+			</awards-entry>
 			<h3 id="skills">SKILLS</h3>
 			<input type="checkbox" id="technical" checked>
 			<label for="technical">IT Skills</label>
@@ -178,7 +159,7 @@
 			<input type="checkbox" id="colors" checked>
 			<label for="colors">Toggle Colors</label>
 			<div style="height:6rem;"></div>
-			<article2 id="skills-article">
+			<skills-entry id="skills-article">
 				<div class="tools" onmouseover = "turnon('python','Python Programming')" onclick = "popup('python','Python Programming')" title="python">Python</div>
 				<div class="technical" onmouseover = "turnon('data-wrangling','Data Wrangling')" onclick = "popup('data-wrangling','Data Wrangling')" title="data-wrangling">Data Wrangling</div>
 				<div class="soft" onmouseover = "turnon('critical-thinking','Critical Thinking')" onclick = "popup('critical-thinking','Critical Thinking')" title="critical-thinking">Critical Thinking</div>
@@ -219,6 +200,7 @@
 				<div class="technical" onmouseover = "turnon('sharepoint-development','Sharepoint Development')" onclick = "popup('sharepoint-development','Sharepoint Development')" title="sharepoint-development">Sharepoint Development</div>
 				<!-- <div class="soft" onmouseover = "turnon('written-communication')" onclick = "popup('written-communication')" title="written-communication">Written Communication</div> -->
 				<div class="tools" onmouseover = "turnon('sublime','Sublime')" onclick = "popup('sublime','Sublime')" title="sublime">Sublime</div>
+				<div class="tools" onmouseover = "turnon('qgis','QGIS')" onclick = "popup('qgis','QGIS')" title="qgis">QGIS</div>
 				<div class="tools" onmouseover = "turnon('power-bi','Power BI')" onclick = "popup('power-bi','Power BI')" title="power-bi">Power BI</div>
 				<div class="tools" onmouseover = "turnon('telegram-bots','Telegram Bots')" onclick = "popup('telegram-bots','Telegram Bots')" title="telegram-bots">Telegram Bots</div>
 				<div class="technical" onmouseover = "turnon('machine-learning','Machine Learning')" onclick = "popup('machine-learning','Machine Learning')" title="machine-learning">Machine Learning</div>
@@ -249,9 +231,8 @@
 				<div class="tools" onmouseover = "turnon('php','PHP Programming')" onclick = "popup('php','PHP Programming')" title="php">PHP</div>
 				<!-- <div class="technical" onmouseover = "turnon('software-testing')" onclick = "popup('software-testing')" title="software-testing">Software Testing</div> -->
 				<div class="tools" onmouseover = "turnon('vs-code','Visual Studio Code')" onclick = "popup('vs-code','Visual Studio Code')" title="vs-code">VS Code</div>
-				<div class="soft" onmouseover = "turnon('music-production','music-production')" onclick = "popup('music-production','music-production')" title="music-production">Music Production</div>
+				<div class="soft" onmouseover = "turnon('music-production','Music Production')" onclick = "popup('music-production','Music Production')" title="music-production">Music Production</div>
 				<div class="tools" onmouseover = "turnon('ruby','Ruby Programming')" onclick = "popup('ruby','Ruby Programming')" title="ruby">Ruby</div>
-				<div class="tools" onmouseover = "turnon('qgis','QGIS')" onclick = "popup('qgis','QGIS')" title="qgis">QGIS</div>
 				<div class="tools" onmouseover = "turnon('vba','Visual Basic for Applications')" onclick = "popup('vba','Visual Basic for Applications')" title="vba">Visual Basic (VBA)</div>
 				<!-- <div class="technical" onmouseover = "turnon('seo')" onclick = "popup('seo')" title="seo">SEO</div> -->
 				<div class="tools" onmouseover = "turnon('azure','Microsoft Azure')" onclick = "popup('azure','Microsoft Azure')" title="azure">Azure</div>
@@ -266,28 +247,18 @@
 				<div class="tools" onmouseover = "turnon('robotc','RobotC Programming')" onclick = "popup('robotc','RobotC Programming')" title="robotc">RobotC</div>
 				<!-- <div class="technical" onmouseover = "turnon('data-architecture')" onclick = "popup('data-architecture')" title="data-architecture">Data Architecture</div> -->
 				<!-- Netlify, Linux, Geopandas, Seaborn, Tensorflow, Flask, Django, OpenCV -->
-			</article2>
-			<!-- <h3 id="scores">MUSIC SHEETS</h3>
-			<input type="checkbox" id="trans" checked>
-			<label for="trans">Transcriptions</label>
-			<input type="checkbox" id="mash" checked>
-			<label for="mash">Mashups</label>
-			<input type="checkbox" id="orig" checked>
-			<label for="orig">Originals</label>
-			<input type="checkbox" id="colors-scores" checked>
-			<label for="colors-scores">Toggle Colors</label> -->
+			</skills-entry>
 			<ul>
-				<span id="default" style="display:none">I am a hyperproductive hobbyist with 2 years of <a href="#experience">experience</a> in Data Analytics. An advocate for lifelong learning, I spend my free time undertaking various <a href="#projects">projects</a>, which you can find on this site. You can also find my various <a href="#skills">skills</a>, <a href="#awards">awards</a> and <a href="#certifications">certifications</a>. For elaboration on my projects and skills, hover over them.</span>
-				<span style="display: none;" id="python">I picked up Python in late 2016 and since then, I've used it every step of the way. Here are some of my experiences with Python:
+				<span id="default">I'd consider my curiosity to be my best trait. Owing to my dedication, I've managed to accrue 3.5 years of <a href="#experience">experience</a> in IT. An advocate for lifelong learning, I spend my free time undertaking various <a href="#projects">projects</a>, which you can find on this site.  You can also find my various <a href="#skills">skills</a>, <a href="#awards">awards</a> and <a href="#certifications">certifications</a>. For elaboration on my projects and skills, hover over them.</span>
+				<span id="python">I picked up Python in late 2016 and since then, I've used it every step of the way. Here are some of my experiences with Python:
 				<ul>
 					<li>I've completed the "Python for Everybody" and the "Deep Learning with Tensorflow" courses.</li>
 					<li>I've served my Robotics Club as its Programming Head for a year, teaching Python to the other clubmates.</li>
-					<li>I've used Pandas and a slew of other Python packages to wrangle and harmonise data during my time in NS.</li>
 					<li>I've produced many packages to assist in producing analytics reports and output files, as well as improving my overall workflow.</li>
 					<li>I've worked on an maintained an optimization model, improving upon its functionalities and user-friendliness.</li>
 					<li>I've used Python in the National Informatics Olympiad and barely missed the Merit award.</li>
 				</ul></span>
-				<span style="display: none;" id="geospatial-analytics">Geospatial Analytics was my main role during my time in National Service (NS), so I have quite a unique set of experiences in this area. I am also including skills in Data Visualisation in here, as it fits well within the scope of Analytics. Here are some of the experiences I have with Geographic Information System (GIS) data:
+				<span id="geospatial-analytics">Geospatial Analytics was my main role during my time in National Service (NS), so I have quite a unique set of experiences in this area. I am also including skills in Data Visualisation in here, as it fits well within the scope of Analytics. Here are some of the experiences I have with Geographic Information System (GIS) data:
 					<ul>
 						<li>I've operated, maintained and built upon a machine learning model that optimises the placement of SCDF resources in Singapore.</li>
 						<li>I've produced multiple scripts and reports that deal with GIS data.</li>
@@ -295,128 +266,130 @@
 						<li>I've designed a Telegram Bot that searches for nearby Halal food based on certain criteria.</li>
 						<li>I've had experience with various Geospatial tools such as Geopandas, Tableau, QGis and Google's Distance Matrix API.</li>
 					</ul></span>
-				<span style="display: none;" id="data-wrangling">Data Wrangling is an inevitable part of the Data Science process, comprising the cleansing and manipulation of raw data into more useful formats. Here are some of the times I've had to wrangle data:
+				<span id="data-wrangling">Data Wrangling is an inevitable part of the Data Science process, comprising the cleansing and manipulation of raw data into more useful formats. Here are some of the times I've had to wrangle data:
 					<ul>
 						<li>I've coded up automation scripts to cleanse data pertaining to EMS, Logistics, Fire Alarms and IPPT as preparation for the data analytics process.</li>
 						<li>I've developed comprehensive packages to facilitate the above workflows, creating functions and classes for often-repeated processes.</li>
 						<li>I've parsed unstructured data extracted from the web, repurposing them for my projects, such as a card game and several language packages.</li>
 						<li>I've assisted in the creation, operation and maintenance of cleaning scripts and macros, written in R, Python and VBA.</li>
 					</ul></span>
-				<span style="display: none;" id="pandas">Pandas is by far my most used tool for Data Science. Here are some of the ways I've used it:
+				<span id="pandas">Pandas is by far my most used tool for Data Science. Here are some of the ways I've used it:
 					<ul>
 						<li>I've used Pandas almost everyday during my 2 years in National Service, developing data science projects, reports as well as pipelines.</li>
 						<li>I've produced Pandas packages to automate and facilitate the cleaning and manipulation of data for use in various projects.</li>
 						<li>I've deeply explored the Geopandas functionalities to produce visualisations during my exploration of Singapore data.</li>
 					</ul></span>
-				<span style="display: none;" id="critical-thinking">Critical Thinking involves the mental processing of information and can be categorised into 4 types. I often used it when answering queries regarding SCDF resource placement. Here are some of the ways I've practised critical thinking:
+				<span id="critical-thinking">I often practiced Critical Thinking when answering queries regarding SCDF resource placement:
 					<ul>
-						<li>Convergent Thinking - Using the tools provided by the optimisation model, I was able to answer the queries raised by management officers.</li>
-						<li>Divergent Thinking - Whenever a problem occurred with the model, I was quick to come up with workarounds. Examples include the monetisation of Google API, the prohibitions on discs, and the mismatch of Anaconda versions, all of which were combatted with the appropriate workarounds.</li>
-						<li>Critical Thinking - I often had to provide my own conclusion and recommendation when presenting my simulation/optimisation results.</li>
-						<li>Creative Thinking - I often ventured into the code of the model and managed to find new ways to improve its functionality.</li>
+						<li><white>Convergent Thinking</white> - I used an optimisation model to answer the queries raised by management officers.</li>
+						<li><white>Divergent Thinking</white> - I encountered and found workarounds to problems such as Google API monetisation, disc prohibition, and Anaconda version mismatch.</li>
+						<li><white>Critical Thinking</white> - I provided my own conclusion and recommendation when presenting my analytics results.</li>
+						<li><white>Creative Thinking</white> - I often ventured into the code of the model and managed to find new ways to improve its functionality.</li>
 					</ul></span>
-				<span style="display: none;" id="web-development">Besides attending a course on Fullstack Web Development, I've done a lot of programming in HTML, CSS and Javascript. I've also experimented on Flask, Django, Angular and React, following guides online to produce small projects. Professionally, I've coded a Sharepoint Portal which utilised and integrated native Sharepoint methods, and also developed on some Rails code during my National Service years. And of course, my websites rely on a bit of JavaScript as well.</span>
-				<span style="display: none;" id="data-harmonisation">Similar to data wrangling, I've done tangible data harmonisation and normalisation work. Particularly, I've transformed the common xlsx, xml, mp3 and json files, and also the less common geojson, shp and xls files. I also have a decent understanding of ETL scripts and processes, as well as applied some Machine Learning concepts to improve the cleanliness of data.</span>
-				<span style="display: none;" id="ui-ux">Before settling with this design, this website has gone through quite a number of revisions. All to understand what designs work and what don't. Other than that, I've also built a Sharepoint Portal, which truly tested my ability to condense large chunks of information into a succinct website. Finally, I've done substantial rework on an optimisation software, making the experience as streamlined as possible.</span>
-				<span style="display: none;" id="data-analytics">This was my job title for my NS. It involved using various programs, data and computational tools to provide relevant insights in big data. All to improve efficiency at the workforce. Without going into too much detail, I've done Exploratory Data Analytics on datasets surrounding logistics, IPPT, medical triaging, fire alarms and myResponder users, providing my preliminary reports to help guide management officers in making decisions of how to move forward.</span>
-				<span style="display: none;" id="web-scraping">I've relied on web scraping to retrieve data online. Among others, I've used it to build my language packages, my Halal Telegram Bot as well as my MALLS Card game. I always make it a habit to produce standardised datasets and not abuse the servers with my code. Apart from Python's Beautiful Soup and Selenium packages, I've been using R's and JavaScript's web scraping functionalities as well.</span>
-				<span style="display: none;" id="data-visualisation">Besides my experience in Tableau and Power BI, I've worked with several other visualisation tools. Specifically, I have experience in using R's ggplot package, creating quite a bit of visualisations during my EDX course as well as my own mini-projects. I've also heavily used Geoplot, Matplotlib and Seaborn. To give an example, I've done countless visualisations on the medical incidents and their response times, to identify gaps in resource coverage.</span>
-				<span style="display: none;" id="independent-learning">An avid advocate for independent learning, I've taken it upon myself to learn as much as I can during whatever free time I have. I've dived deep into a wide range of topics, from my interests in Geography, Astronomy and Languages, to refining my Music and Math hobbies. Often times, during my NS stint, I've had to learn new skills to complete my tasks. Skills such as Ruby, Pandas and Unix.</span>
-				<span style="display: none;" id="music-arrangement">Over a long period, I've refined my ability in arranging music, particularly piano arrangements. Since I started posting piano transcriptions on my Youtube in March 2019, the quality of my arrangements have seen steady improvements. Of course, this came with an influx of new musical ideas and theory concepts, which deepens my understanding of music theory. Definitely helped me compose my own pieces!</span>
-				<span style="display: none;" id="data-science">Data Science is a broad term, as I have ventured quite deep into Machine Learning, NLP, RNN and Sentiment Analysis. I've also done courses in Data Science and Deep Learning.Data Science is a broad term. A big chunk of my involvements in Data Science have been surrounding the Data Analytics/Visualisation track, which you can check out via the sections on Geospatial Analytics, Data Analytics and Data Visualisation. As for the non-Analytics portion, I've done courses in Data Science (HarvardX) and Deep Learning (IBM) and have built several CNN, RNN, and sentiment analysis models in Python and R.</span>
-				<span style="display: none;" id="business-analytics">Building off from Data Analytics, I was often tasked to provide my own conclusion for the reports I gave, which meant making my own judgements on what decisions should be made to combat the issue at hand. Often times, the problems were complex and practical solutions were hard to come by.</span>
-				<span style="display: none;" id="oop">I'm familiar with quite a large assortment of Object-Oriented Programming languages, including (but not limited to) Python, R, JavaScript, Java, C#. Although I've applied OOP principles to some Java and R scripts, the majority of my OOP journey was during my National Service, where I extensively restructured multiple Simulation scripts into objects, thereby shortening their overall time and space complexity. Also, it made it much easier to use the code, converting the different sections of the code into class methods.</span>
-				<span style="display: none;" id="sql">Professionally, I've practiced using SQL during my time in the Ministry of Manpower, either via Power Query in PowerBI, or in creating scripts via SSMS. Apart from that I've practiced SQL on my own, attaining a SQL (Advanced) Certification from Hackerrank. As for personal projects, I practice SQL on Google Sheets' QUERY function, which enabled me to design dynamic databases for my Telegram bots.</span>
-				<span style="display: none;" id="musescore">I've intensely used MuseScore when making my music arrangements and am quite familiar with the fine-tuning tools as well. I am familiar with the MuseScore platform as well, contributing to several communities.</span>
-				<span style="display: none;" id="github">I've been using GitHub to host some of my codes, as well as gone through the necessary setups to automatically deploy my website to Netlify. Other than that, every course I went for involved GitHub to a certain extent, so I've had quite a lot of time revising my commands and configurations.</span>
-				<span style="display: none;" id="mathematical-modeling">I've used my prior maths knowledge to develop intensive functions and equations to solve problems. This is very clearly seen in my adventures in the Desmos graphing calculator app, where I produce geometric artwork as well as some of my own simulations and visual models of complex topics like 3D modelling, Fourier Analysis and Economics. Most of it was done during my NS life, so I can't share them here.</span>
-				<span style="display: none;" id="cloud-computing">Besides undergoing training in AWS and Azure fundamentals, I've played around with the Google Cloud Platform, using them for my various Telegram Bots. Among the GCP functionalities, I've managed to use Google Sheets, Google Apps Script and automated Gmail. I've also used the Google Cloud Platform during my NS, where I had to manage the usage of the Distance Matrix API, setting up the various configurations and account settings.</span>
-				<span style="display: none;" id="g-suite">Many of my projects are based in Google Suite, particularly the Google Sheets. I use Google Sheets as my primary database, as I can both manually input and at the same time can easily extract out data into my Telegram Bots or Python codes. Other than that, I have experience in using the various APIs that Google Suite has to offer such as the Gmail and YouTube API.</span>
-				<span style="display: none;" id="desmos">Desmos is a powerful graphing calculator that allows for intricate mathematical equations. I've used it since early 2017, creating artwork for submission into various competitions. I've since continued this hobby, developing new formulas and equations to produce more programmatic art. I've ventured deep into complex topics such as 3D projection and fourier analysis to produce my more sophisticated art. From this, I've built an intuition as to the behaviours of a wide range of equations.</span>
-				<span style="display: none;" id="html">I've had HTML experience since I was 13, but only since 2019 did I practice it. At the beginner stages, I've followed tutorials online and even read a book on it. As for practicing, in NS, I've assisted the developer of the department website, providing my inputs and suggestions regarding the technical design. I've also dabbled with XHTML.</span>
-				<span style="display: none;" id="css">CSS is constantly evolving so every iteration of my website uses a brand new set of CSS. As much as possible, my newer designs use as little JavaScript as possible, but instead have the dynamic portions be controlled solely by CSS. I've also dabbled with SCSS and Tailwind.</span>
-				<span style="display: none;" id="java">Apart from my Java course on Udemy, I've had ample training and practice using Java for my university life. In particular, CS2030S and CS2040S has placed high emphasis on Java, with assignments and practical assessments being held in Java. As for IDEs, I've gained quite a bit of experience using Eclipse, IntelliJ as well as Vim to create my scripts.</span>
-				<span style="display: none;" id="microsoft-office">Experience in Microsoft Office is a given, but more specifically, I have developed on Excel, Power BI and Sharepoint, along with the M, DAX, VBA and SQL languages. A little experience in Azure as well.</span>
-				<span style="display: none;" id="r">Besides completing the HarvardX Data Science course taught in R, I've done further data science projects in R, producing machine learning models and visualisations. Professionally, I've used a little R during my time in NS. Besides running and maintaining data cleansing scripts in R, I have translated a few R scripts into Python, in order to facilitate the paradigm shift from R to Python.</span>
-				<span style="display: none;" id="jupyter">Jupyter Notebook is my primary IDE, as it also works as a teaching tool. It facilitates the entire Data Science process and can be used to develop R programs as well! I've continuously used it during my time in NS and beyond, and have produced several reports as well. I also have some experience in JupyterLab, the successor to Jupyter Notebook.</span>
-				<span style="display: none;" id="javascript">Besides attending the Fullstack Web Development course, I've used JavaScript to create my websites, including this one. I've also heavily used Google Apps Script (based in JavaScript) to produce my Telegram Bots. I know a bit of Angular and React as well.</span>
-				<span style="display: none;" id="hyperproductivity">I've been called hyperproductive by a senior of mine and indeed, I hate idling my life away. Almost every moment of my free time is spent learning and creating, becoming the best version of myself. Although this gets me to complete my tasks quickly, I do find it quite debilitating as I often lose my appetite and sleep schedule.</span>
-				<span style="display: none;" id="robotics">I've had experience with VEX Robotics and the RobotC language, having participated in the VEX Robotics competition during my time in Junior College. Those 2 years in the Robotics Club have definitely taught me a lot of Robotics lessons, as we had to learn everything the hard way. I've also had some experience using Arduino and Raspberry PI, though only for an hour or so for each.</span>
-				<span style="display: none;" id="mandarin">I currently am at the HSK 5 level and although my speaking skills are not up to par, my written skills are quite decent. I receive all my local news via 早报 and am constantly on the lookout for new vocab. Owing to my exploration of the dictionary, I know quite a bit of domain-specific words and characters, mostly in the science and music fields.</span>
-				<span style="display: none;" id="analytical-reasoning">At the start of my NS journey, I had a hard time trying to interpret data. However, as time passed, I became quite familiar with it, having an understanding of what the users need to know and how to best present my findings. In addition, I spend a lot of time creating and trying out logic puzzles, getting exposure to a myriad of problems.</span>
-				<span style="display: none;" id="api">I've played around with a myriad of API, but I've focussed on Google's Distance Matrix API, Telegram's API, and LTA Data Mart's API, to produce my Telegram Bots and packages. Other than that, I understand the API usage and development process and know the ethical limitations of abusing them.</span>
-				<span style="display: none;" id="mentoring">During my time in Robotics Club, I taught Python to the other clubmembers. The sessions didn't go too well, so I learned from my mistakes and managed to teach programming decently well to newcomers to the Transformations and Future Technology Department (TFTD). For the second half of my second year of NS, I served as a mentor to my juniors, helping them solve their programming-related problems.</span>
-				<span style="display: none;" id="google-apps-script">Google Apps Script is the language that my Telegram Bots are written in. Google API calls are limited in space and frequency, so I often have to optimise the code wherever possible.</span>
-				<span style="display: none;" id="sharepoint-development">I've developed and published a Sharepoint Site from start to finish. It is currently used organisation-wide.</span>
-				<span style="display: none;" id="written-communication">In designing the Sharepoint Site, I had to condense large chunks of information into succinct phrases that anyone can understand. I've also had to do up minutes to important meetings, further refining my written communication skills.</span>
-				<span style="display: none;" id="sublime">Sublime is what I use to code in HTML and CSS, as well as my Python packages. I've gotten quite accustomed to the different shorthand expressions and enjoy using it.</span>
-				<span style="display: none;" id="power-bi">I've had some Power BI training and have used it to produce a couple of visualisations.</span>
-				<span style="display: none;" id="telegram-bots">I have many Telegram Bots thus far and I am quite familiar with the creation process from start to finish. I am able to create interactive Telegram Bots. Among them, I've produced Telegram Bots that help to search for words in the dictionary, search for Halal food, as well as idioms.</span>
-				<span style="display: none;" id="machine-learning">I have experience in every step of the Machine Learning process and have attended a few courses in it as well. Out of the entire process, I've done the most in Data Preparation.</span>
-				<span style="display: none;" id="tableau">I've attended the Tableau Day Out event in 2019 and used it a little bit during NS, where I've played a role in testing, developing and grading dashboards. Apart from that, I've experimented with Tableau when producing my Data Science projects.</span>
-				<span style="display: none;" id="leadership">Apart from having some leadership roles during NS, I've served my Robotics Club as its Programming Head, so I managed to lead that as well.</span>
-				<span style="display: none;" id="music-composition">I've had quite a long period of time to improve my composition skills. But as of now, I only know how to compose piano pieces.</span>
-				<span style="display: none;" id="graphic-design">Besides creating informatics for a Sharepoint Site, I have some experience creating posters as well.</span>
-				<span style="display: none;" id="jquery">The previous versions of this site heavily relied on JQuery functions, for the aesthetics. Since then, the aesthetics portion of JQuery has been taken over by my use of responsive CSS.</span>
-				<span style="display: none;" id="documentation">I've done documentation to several of my professional and personal projects, to pass down to my successors.</span>
-				<span style="display: none;" id="data-governance">I produced a Sharepoint Site about Data Governance. In order to do so, I internalised quite a decent amount of content. From Data Acquisition, to Data Fusion, to Data Management, to Data Exploitation, I've absorbed information about every step of the data life-cycle.</span>
-				<span style="display: none;" id="photoshop">Photoshop is the main way I edit and enhance my photos, either for competitions, artwork, puzzles and other miscellaneous pictures.</span>
-				<span style="display: none;" id="nlp">I've done up a couple of NLP projects using Tensorflow, although the models are not good enough.</span>
-				<span style="display: none;" id="malay">Malay is my Mother Tongue and I use it at home. My written Malay is quite decent, although my speaking skills are not so good.</span>
-				<span style="display: none;" id="business-intelligence">The Data Science reports that I produce are used for making business decisions. I also produced a few dashboards, which also helped in making business decisions.</span>
-				<span style="display: none;" id="minute-taking">I've done up minutes for several important meetings among higher management staff.</span>
-				<span style="display: none;" id="artificial-intelligence">I've gone for a course on AI and spent a bit of time supporting AI projects as well.</span>
-				<span style="display: none;" id="agile-framework">I have experience in working under an Agile methodology, with daily standups serving as progress updates.</span>
-				<span style="display: none;" id="dax">DAX is the language of Excel and Power BI, and I have used it on numerous occasions to manipulate data.</span>
-				<span style="display: none;" id="data-modeling">I went for a couple of Data Modeling training sessions and have experience in using ER Studio, assisting developers in producing their data models.</span>
-				<span style="display: none;" id="ssms">I've produced a few scripts using Microsoft's SQL Server Management Studio. I've received some training for this as well.</span>
-				<span style="display: none;" id="audio-analysis">I've experimented on Python codes that extracted the chords to any song. It used Librosa but the code didn't go that far as there was a lot of theory to understand before attempting it.</span>
-				<span style="display: none;" id="video-editing">I've produced several videos for my YouTube and other accounts. I've edited the videos using iMovie and some Python packages.</span>
-				<span style="display: none;" id="anaconda">Besides using Anaconda to run my Python, R and Jupyter progarms, I've dealt with some Anaconda versioning issues in the past and know my way around resolving many of them.</span>
-				<span style="display: none;" id="c-sharp">I have been using C# when developing the online multiplayer version of my MALLS card game. I've used it mainly on the Unity platform, which is a popular game-making software. Currently, I am still continuing to learn and apply my skills in C#.</span>
-				<span style="display: none;" id="aws">Went for a course on AWS fundamentals and had some hands-on experience as well. I also experimented on using AWS to power my Telegram Bots, but quickly switched over to the more convenient Google Cloud Platform.</span>
-				<span style="display: none;" id="er-studio">I've received training for ER Studio and have assisted developers in the development of Data Models.</span>
-				<span style="display: none;" id="japanese">I've been self-studying for the JLPT N3 test, and am able to understand Japanese to a low-moderate extent.</span>
-				<span style="display: none;" id="php">I've attended the Fullstack Web Development course which taught PHP programming. I've also done some programming in PHP for this site, although I was quite upset when I found out that Netlify doesn't support PHP websites. Though I am able to produce locally-hosted PHP applications, I still don't know much about the networking side of things.</span>
-				<span style="display: none;" id="software-testing">I've tested a couple of softwares during NS and my time at MOM.</span>
-				<span style="display: none;" id="vs-code">After getting accustomed to Sublime, I expanded my usage of code editors, and came across VS Code, which is much easier for file management and building large-scale projects.</span>
-				<span style="display: none;" id="music-production">I have produced some simple tracks using FL Studio and Garage Band. And, if it counts, I've done some mixing and tweaking using MuseScore when preparing the background music for the National Day Ground-Up Party 2020 and 2021.</span>
-				<span style="display: none;" id="ruby">Ruby was a language used during my NS. I mostly did some maintenance work on it, tweaking certain parts of the code to accept different parameters. I also added some of my own clauses for debugging purposes. I've played around quite a bit on this, considering that my personal laptop couldn't set it up properly.</span>
-				<span style="display: none;" id="qgis">I've only used QGis a bit during NS, but I got interested in the software, so I tried it out on my own, using it to visualise some of my Geospatial Data.</span>
-				<span style="display: none;" id="vba">I've created a couple of VBA scripts to replace Python code temporarily when the code didnt work.</span>
-				<span style="display: none;" id="seo">I've implemented SEO practices when creating my site and artworks.</span>
-				<span style="display: none;" id="azure">I've gone for Azure fundamentals training and have had hands-on experience.</span>
-				<span style="display: none;" id="french">I've completed the French course on Duolingo and have communicated with native speakers over HelloTalk.</span>
-				<span style="display: none;" id="cpp">I have experience in using C++ in 2017, when starting out in coding. During that time, I mainly practiced on online compilers and the most I've done is a couple of algorithm questions. Otherwise, I haven't done any major projects in C++.</span>
-				<span style="display: none;" id="web-analysis">I've gone through the analytics for my sites and channels to find out what content works and what doesn't.</span>
-				<span style="display: none;" id="korean">I've joined a course in Korean and continued to learn it afterwards. Laddering off of Mandarin and Japanese, Korean became relatively easy to learn because of similar grammar and vocabulary.</span>
-				<span style="display: none;" id="m">I've learnt the M language to better understand Power BI power query code.</span>
-				<span style="display: none;" id="spanish">I've learnt Spanish on Duolingo and understand quite a bit of the grammar.</span>
-				<span style="display: none;" id="flstudio">I've used FL Studio to produce some simple beat tracks, following a couple of online tutorials and nothing more than that.</span>
-				<span style="display: none;" id="swift">I've tried out Swift on online compilers, but haven't had a need to develop Apple applications as of yet. I mainly create Telegram bots and web programs during my web development journey.</span>
-				<span style="display: none;" id="robotc">I've used RobotC to program the VEX Robots during my time in the Robotics Club. I managed to learn the language within a short period of time and even had the time to create teaching materials for it in preparation for the VEX Robotics competition which the club competed in.</span>
-				<span style="display: none;" id="data-architecture">I've attended training on Data Architecture, learning useful concepts pertaining to governance, data standards and data design.</span>
-				<span style="display: none;" id="mom">Over my 6 months at the Ministry of Manpower, I've attended a great number of training sessions, either by developers (Power BI, SSMS, ER Studio) or from external vendors (AWS, Azure, Snowflake). As for my monthly tasks, I did work in DevSecOps, where I helped in the management of privileged accounts. Particularly, I streamlined the process using DAX functionalities. Apart from that, I was involved in the creation of some dashboards and data models. There was also my task to take down minutes of important meetings, summarising the key decision points. But by far my most important role was to design and publish a Data Governance Portal. The site was designed using HTML, CSS and Sharepoint functionalites and is currently used organisation-wide as a source of Data Governance guidelines and explanations.</span>
-				<span style="display: none;" id="scdf">I served my National Service in the Data Science and Artificial Intelligence (DSAI) branch of the Transformations and Future Technologies Department (TFTD) in the Singapore Civil Defence Force (SCDF). My main role involved the operation, maintenance and development of a Dynamic Resource Optimisation (DRO) model. The project aimed to optimise the placement of SCDF resources throughout Singapore. My main role consisted of transforming and manipulating data for training. However, during the COVID period, I was left to my own resources, so I did my best and made the code as streamlined as possible, reducing a six-step process into a two-step one. Other than the DRO project, I was roped in to many other projects as well, conducting exploratory data analytics and presenting my findings.</span>
-				<span style="display: none;" id="vrmc">I was appointed to become the Programming Head due to my prior experience in Python programming. In this position, I first had to rapidly learn the RobotC language within 3 weeks, in order to support the teams in competing in the annual VEX championships. I managed to even come up with slides for it and taught it briefly to the other clubmates. This was the first time I was teaching something, so it didn't go as planned. This continued when I taught Python to others. Nevertheless, it was a good learning experience as my teaching skills eventually improved. Other than that, I've contributed greatly to the Robotics Camp for the next intake of members, coming up with activities on the spot.</span>
-				<span style="display: none;" id="malls">I've created a statistics-driven card game based around the shopping malls of Singapore. Data was extracted using Python, and compiled using R. I also did some dynamic ranking using Google Sheets. As for the design, I did it in HTML and CSS, making use of as much data as I can. The cards have been tested on numerous occasions and have seen quite a number of integral shifts. Hopefully in the future I can publish the game for real.</span>
-				<span style="display: none;" id="python-packages">My coding projects exist mainly to support my other hobbies, such as Music Composition, Language Learning and my MALLS Card Game development. Although I've done quite a number of Data Science models and web applications, the main bulk of my work consists of web-scraping functions, which helps to extract and parse data. For my music ambitions, I have created code that outputs the chords to any song, standardising them into suitable formats. For my language-learning ambitions, I have created code that searches for sample sentences for any particular words. Finally, for my MALLS Card Game, I've developed many Geospatial functions that manipulate data from many sources and condense them into harmonised datasets.</span>
-				<span style="display: none;" id="java-course">The course teaches me about development in Java, including the commonly-used frameworks. I've gotten used to producing simple codes using Eclipse, from simple calculators to small-scale OOP  projects.</span>
-				<span style="display: none;" id="fullstack">The course teaches beginner to advanced concepts in HTML, CSS, JavaScript, Python, Wagtail CMS, PHP and MySQL. A complete course in Web Development from a very reputable teacher. From this, I was able to refine the existing design of my website, implementing responsive features wherever I deem fit.</span>
-				<span style="display: none;" id="tensorflow">The course taught the various functionalities of Tensorflow as well as the various architectures involved in making Deep Learning models. The resources were heavy on theory, but there was plenty of practical elements as well. Through the modules taught in the course, I've managed to develop my RNN models for music prediction as well as build prototypes for my own ambulance optimiser.</span>
-				<span style="display: none;" id="harvard-data-science">The Data Science course by Harvard was an essential one, as it taught the entire Data Science process from beginning to end. It was based in the R language, covering its various roles in Visualisation, Wrangling and especially Machine Learning. It is listed as one of the top Data Science courses online.</span>
-				<span style="display: none;" id="python-for-everybody">This was the first programming course I attended, and I was immensely focused on it, finishing the entire course within a week. The course not only went through the Python journey, but it also went into detail the SQL and Github functionalities.</span>
-				<span style="display: none;" id="smo">I've won quite a number of awards in the Singapore Mathematical Olympiad (SMO), and made it to the second round several times, despite not receiving much training beforehand. As I didn't have any mentors for competitive mathematics, I couldn't develop enough skill to attain the Gold Award in the second round. Due to the high amount of rigor needed to prove the statements, I could not pass through.</span>
-				<span style="display: none;" id="ti">I've attained Gold for the 2018 competition and attained Silver for the 2017 one. In the Texas Instruments competition, a theme is given and the participants are to design a graph to meet that particular theme. Under the "Towards a Smart Nation" theme, I managed to come up with a Gold-worthy design, earning me the feature on the school's Facebook and Instagram pages. My design, which encapsulated the major areas of science, consisted of no fewer than 200 equations and were carefully designed using my custom formulas.</span>
-				<span style="display: none;" id="best-in-maths">I was well-known for my Maths during my primary school years, attaining the highest overall grade in 4 out of 5 examinable years. Four times, I've scored at least a 99 in my final year exam. Even the year I didn't receive first, I managed to score a 99. This trend unfortunately didn't continute into secondary school, for I started to face medical issues and missed out on certain exams.</span>
-				<span style="display: none;" id="other"><span class="white">High Distinction</span> Australian Maths Competition 2018<br/><span class="white">High Distinction</span> UNSW Mathematics 2011 & 2012<br/><span class="white">Distinction</span> Euclid Contest 2017 & 2018<br/><span class="white">Distinction</span> UNSW Science 2010 & 2012<br/><span class="white">Distinction</span> UWL Music Performance Ensemble Level 4<br/><span class="white">Excellence</span> Australian National Chemistry Quiz 2016<br/><span class="white">Bronze</span> Southeast Asian Maths Olympiad 2017<br/><span class="white">Second Round</span> Instagram Maths Olympiad 2020<br/><span class="white">Second Round</span> Criminal Behavioural Analysis Competition 2017<br/><span class="white">Best Trainee</span> Best Trainee for the 52nd Admin Support Course<br/><span class="white">Merit</span> Grade 5 Music Theory<br/><span class="white">Passed</span> Grade 5 Piano</span>
-				<span style="display: none;" id="geo-py">I did alot of geospatial work to produce my card game, Telegram bots and visualisations. I have made even more than this during my time in a Data Analytics position. Here are the functions and datasets that I can share freely, as they mostly use government-approved resources. You can view the codes used to extract data pertaining to MRT, buses, roads, altitude and parking. Packages used: requests, pandas, geopandas, json, sheets.py, utils.py, itertools, shapely, matplotlib and more.</span>
-				<span style="display: none;" id="language-py">This package is made up of many small segments, all combined to assist me in learning Chinese, Japanese and Korean. Particularly, I used web scraping to obtain sample sentences for any given word, along with English transliterations and translations for all sorts of text. I've also done web-scraping scripts to extract French and Spanish vocabulary from a variety of sources. Packages used: re, pykakasi, chinese, spiderman.py, utils.py, sheets.py, jaconv, random and more.</span>
-				<span style="display: none;" id="spiderman-py">This is the package that I use most often. It greatly improved my efficiency in Web Scraping, making the whole process neater. It involves a singular class, named website() that accepts a url. And in it, you can extract the tables, lists and links found in the site. It streamlined a lot of my daily processes.</span>
-				<span style="display: none;" id="utils-py">This package is made up of a collection of useful functions, using all sorts of packages and dependencies. More generally, this is a dumping ground for segments of codes that I repeatedly use during my time programming. Codes relating to geography and pandas for instance.</span>
-				<span style="display: none;" id="telegram-py">This package facilitates the creation of a telegram interface for codes, allowing for the remote activation and monitoring of scripts. This allowed me to be very far from my workstation, to go around the place while my code was still running. Do note that setting up a Telegram bot first needs to be done via BotFather, and botId is what is needed in the code.</span>
-				<span style="display: none;" id="chords-py">I've been doing alot of Machine Learning and Recurrent Neural Network projects pertaining to the chord progressions of songs. While that has some success, I wanted to take a step further to incorporate NLP into the RNN. Meaning, I wanted to output a chord progression given any piece of text. That part is quite unfinished so this is the part I have. So basically, once I get a list of songs, along with their artists, I can get their chord progressions, standardise them and extract their BPM and popularity.</span>
-				<span style="display: none;" id="sheets-py">This package is simple. It just extracts data out from your Google Sheets as a dataframe. Although I have many different functions to suit my needs, they all follow one pattern, which is the function I have listed below.</span>
+				<span id="web-development">Besides attending a course on Fullstack Web Development, I've done a lot of programming in HTML, CSS and Javascript. I've also experimented on Flask, Django, Angular and React, following guides online to produce small projects. Professionally, I've coded a Sharepoint Portal which utilised and integrated native Sharepoint methods, and also developed on some Rails code during my National Service years. And of course, my websites rely on a bit of JavaScript as well.</span>
+				<span id="data-harmonisation">Similar to data wrangling, I've done tangible data harmonisation and normalisation work. Particularly, I've transformed the common xlsx, xml, mp3 and json files, and also the less common geojson, shp and xls files. I also have a decent understanding of ETL scripts and processes, as well as applied some Machine Learning concepts to improve the cleanliness of data.</span>
+				<span id="ui-ux">Before settling with this design, this website has gone through quite a number of revisions. All to understand what designs work and what don't. Other than that, I've also built a Sharepoint Portal, which truly tested my ability to condense large chunks of information into a succinct website. Finally, I've done substantial rework on an optimisation software, making the experience as streamlined as possible.</span>
+				<span id="data-analytics">This was my job title for my NS. It involved using various programs, data and computational tools to provide relevant insights in big data. All to improve efficiency at the workforce. Without going into too much detail, I've done Exploratory Data Analytics on datasets surrounding logistics, IPPT, medical triaging, fire alarms and myResponder users, providing my preliminary reports to help guide management officers in making decisions of how to move forward.</span>
+				<span id="web-scraping">I've relied on web scraping to retrieve data online. Among others, I've used it to build my language packages, my Halal Telegram Bot as well as my MALLS Card game. I always make it a habit to produce standardised datasets and not abuse the servers with my code. Apart from Python's Beautiful Soup and Selenium packages, I've been using R's and JavaScript's web scraping functionalities as well.</span>
+				<span id="data-visualisation">Besides my experience in Tableau and Power BI, I've worked with several other visualisation tools. Specifically, I have experience in using R's ggplot package, creating quite a bit of visualisations during my EDX course as well as my own mini-projects. I've also heavily used Geoplot, Matplotlib and Seaborn. To give an example, I've done countless visualisations on the medical incidents and their response times, to identify gaps in resource coverage.</span>
+				<span id="independent-learning">An avid advocate for independent learning, I've taken it upon myself to learn as much as I can during whatever free time I have. I've dived deep into a wide range of topics, from my interests in Geography, Astronomy and Languages, to refining my Music and Math hobbies. Often times, during my NS stint, I've had to learn new skills to complete my tasks. Skills such as Ruby, Pandas and Unix.</span>
+				<span id="music-arrangement">Over a long period, I've refined my ability in arranging music, particularly piano arrangements. Since I started posting piano transcriptions on my Youtube in March 2019, the quality of my arrangements have seen steady improvements. Of course, this came with an influx of new musical ideas and theory concepts, which deepens my understanding of music theory. Definitely helped me compose my own pieces!</span>
+				<span id="data-science">Data Science is a broad term, as I have ventured quite deep into Machine Learning, NLP, RNN and Sentiment Analysis. I've also done courses in Data Science and Deep Learning.Data Science is a broad term. A big chunk of my involvements in Data Science have been surrounding the Data Analytics/Visualisation track, which you can check out via the sections on Geospatial Analytics, Data Analytics and Data Visualisation. As for the non-Analytics portion, I've done courses in Data Science (HarvardX) and Deep Learning (IBM) and have built several CNN, RNN, and sentiment analysis models in Python and R.</span>
+				<span id="business-analytics">Building off from Data Analytics, I was often tasked to provide my own conclusion for the reports I gave, which meant making my own judgements on what decisions should be made to combat the issue at hand. Often times, the problems were complex and practical solutions were hard to come by.</span>
+				<span id="oop">I'm familiar with quite a large assortment of Object-Oriented Programming languages, including (but not limited to) Python, R, JavaScript, Java, C#. Although I've applied OOP principles to some Java and R scripts, the majority of my OOP journey was during my National Service, where I extensively restructured multiple Simulation scripts into objects, thereby shortening their overall time and space complexity. Also, it made it much easier to use the code, converting the different sections of the code into class methods.</span>
+				<span id="sql">Professionally, I've practiced using SQL during my time in the Ministry of Manpower, either via Power Query in PowerBI, or in creating scripts via SSMS. Apart from that I've practiced SQL on my own, attaining a SQL (Advanced) Certification from Hackerrank. As for personal projects, I practice SQL on Google Sheets' QUERY function, which enabled me to design dynamic databases for my Telegram bots.</span>
+				<span id="musescore">I've intensely used MuseScore when making my music arrangements and am quite familiar with the fine-tuning tools as well. I am familiar with the MuseScore platform as well, contributing to several communities.</span>
+				<span id="github">Apart from using Git in many programming courses, I've used Github Pages to host my websites. I've also been experimenting with Github Actions to bring my databased up to date with my Google Sheets data. Github was banned during my time in SCDF, and as such, I was not able to utilise it at for the most part.</span>
+				<span id="mathematical-modeling">I've used my prior maths knowledge to develop intensive functions and equations to solve problems. This is very clearly seen in my adventures in the Desmos graphing calculator app, where I produce geometric artwork as well as some of my own simulations and visual models of complex topics like 3D modelling, Fourier Analysis and Economics. Most of it was done during my NS life, so I can't share them here.</span>
+				<span id="cloud-computing">Besides undergoing training in AWS and Azure fundamentals, I've played around with the Google Cloud Platform, using them for my various Telegram Bots. Among the GCP functionalities, I've managed to use Google Sheets, Google Apps Script and automated Gmail. I've also used the Google Cloud Platform during my NS, where I had to manage the usage of the Distance Matrix API, setting up the various configurations and account settings.</span>
+				<span id="g-suite">Formerly known as Google Workspace, many of my projects are based in Google Suite, particularly the Google Sheets. I use Google Sheets as my primary database, as I can both manually input and at the same time can easily extract out data into my Telegram Bots or Python codes. Other than that, I have experience in using the various APIs that Google Suite has to offer such as the Gmail and YouTube API. I've also had the opportunity to experiment with the Distance Matrix to predict travel times.</span>
+				<span id="desmos">Desmos is a powerful graphing calculator that allows for intricate mathematical equations. I've used it since early 2017, creating artwork for submission into various competitions. I've since continued this hobby, developing new formulas and equations to produce more programmatic art. I've ventured deep into complex topics such as 3D projection and fourier analysis to produce my more sophisticated art. From this, I've built an intuition as to the behaviours of a wide range of equations.</span>
+				<span id="html">I've had HTML experience since I was 13, but only since 2019 did I practice it. At the beginner stages, I've followed tutorials online and even read a book on it. As for practicing, in NS, I've assisted the developer of the department website, providing my inputs and suggestions regarding the technical design. I've also dabbled with XHTML.</span>
+				<span id="css">CSS is constantly evolving so every iteration of my website uses a brand new set of CSS. As much as possible, my newer designs use as little JavaScript as possible, but instead have the dynamic portions be controlled solely by CSS. I've designed my own templates, including the one used in this website. I've also dabbled with SCSS and Tailwind.</span>
+				<span id="java">Apart from my Java course on Udemy, I've had ample training and practice using Java for my university life. In particular, CS2030S and CS2040S has placed high emphasis on Java, with assignments and practical assessments being held in Java. As for IDEs, I've gained quite a bit of experience using Eclipse, IntelliJ as well as Vim to create my scripts. I've even created a Java version of my Python data science code, used to solve the travelling salesman problem for MRT stations.</span>
+				<span id="microsoft-office">Experience in Microsoft Office is a given, but more specifically, I have developed on Excel, Power BI and Sharepoint, along with the M, DAX, VBA and SQL languages. A little experience in Azure as well.</span>
+				<span id="r">Besides completing the HarvardX Data Science course taught in R, I've done further data science projects in R, producing machine learning models and visualisations. Professionally, I've used a little R during my time in NS. Besides running and maintaining data cleansing scripts in R, I have translated a few R scripts into Python, in order to facilitate the paradigm shift from R to Python.</span>
+				<span id="jupyter">Jupyter Notebook is my primary IDE, as it also works as a teaching tool. It facilitates the entire Data Science process and can be used to develop R programs as well! I've continuously used it during my time in NS and beyond, and have produced several reports as well. I also have some experience in JupyterLab, the successor to Jupyter Notebook.</span>
+				<span id="javascript">Besides attending the Fullstack Web Development course, I've used JavaScript to create my websites, including this one. I've also heavily used Google Apps Script (based in JavaScript) to produce my Telegram Bots. I know a bit of Angular and React as well.</span>
+				<span id="hyperproductivity">I've been called hyperproductive by a couple of people in my life and indeed, I hate idling my life away. Almost every moment of my free time is spent learning and creating, becoming the best version of myself. This is quite apparent to those who know me. Although this gets me to complete my tasks quickly, I do find it quite debilitating as I often lose my appetite and sleep schedule.</span>
+				<span id="robotics">I've had experience with VEX Robotics and the RobotC language, having participated in the VEX Robotics competition during my time in Junior College. Those 2 years in the Robotics Club have definitely taught me a lot of Robotics lessons, as we had to learn everything the hard way. I've also had some experience using Arduino and Raspberry PI, though only for an hour or so for each.</span>
+				<span id="mandarin">I currently am at the HSK 5 level and although my speaking skills are not up to par, my written skills are quite decent. I receive all my local news via 早报 and am constantly on the lookout for new vocab. Owing to my exploration of the dictionary, I know quite a bit of domain-specific words and characters, mostly in the science and music fields.</span>
+				<span id="analytical-reasoning">At the start of my NS journey, I had a hard time trying to interpret data. However, as time passed, I became quite familiar with it, having an understanding of what the users need to know and how to best present my findings. In addition, I spend a lot of time creating and trying out logic puzzles, getting exposure to a myriad of problems.</span>
+				<span id="api">I've played around with a myriad of API, but I've focussed on Google's Distance Matrix API, Telegram's API, and LTA Data Mart's API, to produce my Telegram Bots and packages. Other than that, I understand the API usage and development process and know the ethical limitations of abusing them.</span>
+				<span id="mentoring">During my time in Robotics Club, I taught Python to the other clubmembers. The sessions didn't go too well, so I learned from my mistakes and managed to teach programming decently well to newcomers to the Transformations and Future Technology Department (TFTD). For the second half of my second year of NS, I served as a mentor to my juniors, helping them solve their programming-related problems.</span>
+				<span id="google-apps-script">Google Apps Script is the language that my Telegram Bots are written in. Google API calls are limited in space and frequency, so I often have to optimise the code wherever possible.</span>
+				<span id="sharepoint-development">I've developed and published a Sharepoint Site from start to finish. It is currently used organisation-wide.</span>
+				<span id="written-communication">In designing the Sharepoint Site, I had to condense large chunks of information into succinct phrases that anyone can understand. I've also had to do up minutes to important meetings, further refining my written communication skills.</span>
+				<span id="sublime">Sublime is what I use to code in HTML and CSS, as well as my Python packages. I've gotten quite accustomed to the different shorthand expressions and enjoy using it.</span>
+				<span id="power-bi">I've had some Power BI training and have used it to produce a couple of visualisations.</span>
+				<span id="telegram-bots">I have many Telegram Bots thus far and I am quite familiar with the creation process from start to finish. I am able to create interactive Telegram Bots. Among them, I've produced Telegram Bots that help to search for words in the dictionary, search for Halal food, as well as idioms.</span>
+				<span id="machine-learning">I have experience in every step of the Machine Learning process and have attended a few courses in it as well. Out of the entire process, I've done the most in Data Preparation.</span>
+				<span id="tableau">I've attended the Tableau Day Out event in 2019 and used it a little bit during NS, where I've played a role in testing, developing and grading dashboards. Apart from that, I've experimented with Tableau when producing my Data Science projects.</span>
+				<span id="leadership">Apart from having some leadership roles during NS, I've served my Robotics Club as its Programming Head, so I managed to lead that as well.</span>
+				<span id="music-composition">I've had quite a long period of time to improve my composition skills. But as of now, I only know how to compose piano pieces.</span>
+				<span id="graphic-design">Besides creating informatics for a Sharepoint Site, I have some experience creating posters as well.</span>
+				<span id="jquery">The previous versions of this site heavily relied on JQuery functions, for the aesthetics. Since then, the aesthetics portion of JQuery has been taken over by my use of responsive CSS.</span>
+				<span id="documentation">I've done documentation to several of my professional and personal projects, to pass down to my successors.</span>
+				<span id="data-governance">I produced a Sharepoint Site about Data Governance. In order to do so, I internalised quite a decent amount of content. From Data Acquisition, to Data Fusion, to Data Management, to Data Exploitation, I've absorbed information about every step of the data life-cycle.</span>
+				<span id="photoshop">Photoshop is the main way I edit and enhance my photos, either for competitions, artwork, puzzles and other miscellaneous pictures.</span>
+				<span id="nlp">I've done up a couple of NLP projects using Tensorflow, although the models are not good enough.</span>
+				<span id="malay">Malay is my Mother Tongue and I use it at home. My written Malay is quite decent, although my speaking skills are not so good.</span>
+				<span id="business-intelligence">During my time in both SCDF and MOM, I've had the opportunity to solve performance-related problems and improve efficiency in the organisation. Utilising Data Mining, Business Analytics and Data Visualisation to assist management staff in making well-informed business decisions.</span>
+				<span id="minute-taking">I've done up minutes for several important meetings among higher management staff.</span>
+				<span id="artificial-intelligence">I've gone for a course on AI and spent a bit of time supporting AI projects as well.</span>
+				<span id="agile-framework">I have experience in working under an Agile methodology, with daily standups serving as progress updates.</span>
+				<span id="dax">Data Analysis Expressions is the language developed by Microsoft to interact with data in their platforms like Power BI, Excel and SSMS. I've had the opportunity to apply them on numerous occasions, building my familiarity with the language.</span>
+				<span id="data-modeling">I went for a couple of Data Modeling training sessions and have experience in using ER Studio, assisting developers in producing their data models.</span>
+				<span id="ssms">I've produced a few scripts using Microsoft's SQL Server Management Studio. I've received some training for this as well.</span>
+				<span id="audio-analysis">I've experimented on Python codes that extracted the chords to any song. It used Librosa but the code didn't go that far as there was a lot of theory to understand before attempting it.</span>
+				<span id="video-editing">I've produced several videos for my YouTube and other accounts. I've edited the videos using iMovie and some Python packages.</span>
+				<span id="anaconda">Besides using Anaconda to run my Python, R and Jupyter progarms, I've dealt with some Anaconda versioning issues in the past and know my way around resolving many of them.</span>
+				<span id="c-sharp">I have been using C# when developing the online multiplayer version of my MALLS card game. I've used it mainly on the Unity platform, which is a popular game-making software. Currently, I am still continuing to learn and apply my skills in C#, though I'm exploring other options in React as a platform for my game.</span>
+				<span id="aws">I went for a course on AWS fundamentals and had some hands-on experience creating S3 buckets and objects as well. I also experimented on using AWS to power my Telegram Bots, although quickly switched over to the more convenient Google Cloud Platform.</span>
+				<span id="er-studio">I've received training for ER Studio and have assisted developers in the development of Data Models.</span>
+				<span id="japanese">I've been self-studying for the JLPT N3 test, and am able to understand Japanese to a low-moderate extent.</span>
+				<span id="php">I've attended the Fullstack Web Development course which taught PHP programming. I've also done some programming in PHP for this site, although I was quite upset when I found out that Netlify doesn't support PHP websites. Though I am able to produce locally-hosted PHP applications, I still don't know much about the networking side of things.</span>
+				<span id="software-testing">I've tested a couple of softwares during NS and my time at MOM.</span>
+				<span id="vs-code">After getting accustomed to Sublime, I expanded my usage of code editors, and came across VS Code, which is much easier for file management and building large-scale projects.</span>
+				<span id="music-production">I have produced some simple tracks using FL Studio and Garage Band. And, if it counts, I've done some mixing and tweaking using MuseScore when preparing the background music for the National Day Ground-Up Party 2020 and 2021.</span>
+				<span id="ruby">Ruby was a language used during my NS. I mostly did some maintenance work on it, tweaking certain parts of the code to accept different parameters. I also added some of my own clauses for debugging purposes. I've played around quite a bit on this, considering that my personal laptop couldn't set it up properly.</span>
+				<span id="qgis">I've used QGIS a little bit during NS, but most of my exploration came afterwards. Particularly, I've used QGIS during my exploration and analysis of Geospatial data, including the Grab Data Analytics Competition, where Grab vehicles data was to be visualised.</span>
+				<span id="vba">I've created a couple of VBA scripts to replace Python code temporarily when the code didnt work.</span>
+				<span id="seo">I've implemented SEO practices when creating my site and artworks.</span>
+				<span id="azure">I've gone for Azure fundamentals training and have had hands-on experience.</span>
+				<span id="french">I've completed the French course on Duolingo and have communicated with native speakers over HelloTalk.</span>
+				<span id="cpp">I have experience in using C++ in 2017, when starting out in coding. During that time, I mainly practiced on online compilers and the most I've done is a couple of algorithm questions online. Otherwise, I haven't done any major projects in C++.</span>
+				<span id="web-analysis">I've gone through the analytics for my sites and channels to find out what content works and what doesn't.</span>
+				<span id="korean">I've joined a course in Korean and continued to learn it afterwards. Laddering off of Mandarin and Japanese, Korean became relatively easy to learn because of similar grammar and vocabulary.</span>
+				<span id="m">I've learnt the M language to better understand Power BI power query code.</span>
+				<span id="spanish">I've learnt Spanish on Duolingo and understand quite a bit of the grammar.</span>
+				<span id="flstudio">I've used FL Studio to produce some simple beat tracks, following a couple of online tutorials and nothing more than that.</span>
+				<span id="swift">I've tried out Swift on online compilers, but haven't had a need to develop Apple applications as of yet. I mainly create Telegram bots and web programs during my web development journey.</span>
+				<span id="robotc">I've used RobotC to program the VEX Robots during my time in the Robotics Club. I managed to learn the language within a short period of time and even had the time to create teaching materials for it in preparation for the VEX Robotics competition which the club competed in.</span>
+				<span id="data-architecture">I've attended training on Data Architecture, learning useful concepts pertaining to governance, data standards and data design.</span>
+				<span id="mom">Over my 6 months at the Ministry of Manpower, I've attended a great number of training sessions, either by developers (Power BI, SSMS, ER Studio) or from external vendors (AWS, Azure, Snowflake). As for my monthly tasks, I did work in DevSecOps, where I helped in the management of privileged accounts. Particularly, I streamlined the process using DAX functionalities. Apart from that, I was involved in the creation of some dashboards and data models. There was also my task to take down minutes of important meetings, summarising the key decision points. But by far my most important role was to design and publish a Data Governance Portal. The site was designed using HTML, CSS and Sharepoint functionalites and is currently used organisation-wide as a source of Data Governance guidelines and explanations.</span>
+				<span id="scdf">I served my National Service in the Data Science and Artificial Intelligence (DSAI) branch of the Transformations and Future Technologies Department (TFTD) in the Singapore Civil Defence Force (SCDF). My main role involved the operation, maintenance and development of a Dynamic Resource Optimisation (DRO) model. The project aimed to optimise the placement of SCDF resources throughout Singapore. My main role consisted of transforming and manipulating data for training. However, during the COVID period, I was left to my own resources, so I did my best and made the code as streamlined as possible, reducing a six-step process into a two-step one. Other than the DRO project, I was roped in to many other projects as well, conducting exploratory data analytics and presenting my findings.</span>
+				<span id="vrmc">I was appointed to become the Programming Head due to my prior experience in Python programming. In this position, I first had to rapidly learn the RobotC language within 3 weeks, in order to support the teams in competing in the annual VEX championships. I managed to even come up with slides for it and taught it briefly to the other clubmates. This was the first time I was teaching something, so it didn't go as planned. This continued when I taught Python to others. Nevertheless, it was a good learning experience as my teaching skills eventually improved. Other than that, I've contributed greatly to the Robotics Camp for the next intake of members, coming up with activities on the spot.</span>
+				<span id="blog">I've had a lot of hobbies and interests in the past, so I'd like to share about some of them in my blog. To generalise, my interests encompass a continuum of concepts that "further my understanding of the world". This would primarily include Astronomy, Geography, Mathematics and the Natural Sciences, but many related topics such as Mythology and Languages get roped in as well. Of course, I'll also share my experiences in taking modules in NUS, as well as my music and coding journeys.</span>
+				<span id="malls">I've created a statistics-driven card game based around the shopping malls of Singapore. Data was extracted using Python, and compiled using R. I also did some dynamic ranking using Google Sheets. As for the design, I did it in HTML and CSS, making use of as much data as I can. The cards have been tested on numerous occasions and have seen quite a number of integral shifts. Hopefully in the future I can publish the game for real.</span>
+				<span id="singapore">This is my first Django app made to better manage Geospatial information. It includes Malls, Halal Shops, MRT lines, Roads, Bus Services among other things. You can also query elevations between locations and cross-sectional elevations as well. As of now, only the get methods have been implemented, but I will work on the post ones when I have the time.</span>
+				<span id="wilcoxon-package">My coding projects exist mainly to support my other hobbies, such as Music Composition, Language Learning and my MALLS Card Game development. Although I've done quite a number of Data Science models and web applications, the main bulk of my work consists of web-scraping functions, which help to extract and parse data. For my music ambitions, I have created code that outputs the chords to any song, standardising them into suitable formats. For my language-learning ambitions, I have created code that searches for sample sentences for any particular words. Finally, for my MALLS Card Game, I've developed many Geospatial functions that manipulate data from many sources and condense them into harmonised datasets.</span>
+				<span id="java-course">The course teaches me about development in Java, including the commonly-used frameworks. I've gotten used to producing simple codes using Eclipse, from simple calculators to small-scale OOP projects.</span>
+				<span id="fullstack">The course teaches beginner to advanced concepts in HTML, CSS, JavaScript, Python, Wagtail CMS, PHP and MySQL. A complete course in Web Development from a very reputable teacher. From this, I was able to refine the existing design of my website, implementing responsive features wherever I deem fit.</span>
+				<span id="tensorflow">The course taught the various functionalities of Tensorflow as well as the various architectures involved in making Deep Learning models. The resources were heavy on theory, but there was plenty of practical elements as well. Through the modules taught in the course, I've managed to develop my RNN models for music prediction as well as build prototypes for my own ambulance optimiser.</span>
+				<span id="harvard-data-science">The Data Science course by Harvard was an essential one, as it taught the entire Data Science process from beginning to end. It was based in the R language, covering its various roles in Visualisation, Wrangling and especially Machine Learning. It is listed as one of the top Data Science courses online.</span>
+				<span id="python-for-everybody">This was the first programming course I attended, and I was immensely focused on it, finishing the entire course within a week. The course not only went through the Python journey, but it also went into detail the SQL and Github functionalities.</span>
+				<span id="smo">I've won quite a number of awards in the Singapore Mathematical Olympiad (SMO), and made it to the second round several times, despite not receiving much training beforehand. As I didn't have any mentors for competitive mathematics, I couldn't develop enough skill to attain the Gold Award in the second round. Due to the high amount of rigor needed to prove the statements, I could not pass through.</span>
+				<span id="ti">I've attained Gold for the 2018 competition and attained Silver for the 2017 one. In the Texas Instruments competition, a theme is given and the participants are to design a graph to meet that particular theme. Under the "Towards a Smart Nation" theme, I managed to come up with a Gold-worthy design, earning me the feature on the school's Facebook and Instagram pages. My design, which encapsulated the major areas of science, consisted of no fewer than 200 equations and were carefully designed using my custom formulas.</span>
+				<span id="best-in-maths">I was well-known for my Maths during my primary school years, attaining the highest overall grade in 4 out of 5 examinable years. Four times, I've scored at least a 99 in my final year exam. Even the year I didn't receive first, I managed to score a 99. This trend unfortunately didn't continute into secondary school, for I started to face medical issues and missed out on certain exams.</span>
+				<span id="other"><white>High Distinction</white> Australian Maths Competition 2018<br/><white>High Distinction</white> UNSW Mathematics 2011 & 2012<br/><white>Distinction</white> Euclid Contest 2017 & 2018<br/><white>Distinction</white> UNSW Science 2010 & 2012<br/><white>Distinction</white> UWL Music Performance Ensemble Level 4<br/><white>Excellence</white> Australian National Chemistry Quiz 2016<br/><white>Bronze</white> Southeast Asian Maths Olympiad 2017<br/><white>Second Round</white> Instagram Maths Olympiad 2020<br/><white>Second Round</white> Criminal Behavioural Analysis Competition 2017<br/><white>Best Trainee</white> Best Trainee for the 52nd Admin Support Course<br/><white>Merit</white> Grade 5 Music Theory<br/><white>Passed</white> Grade 5 Piano</span>
+				<span id="geo-py">I did alot of geospatial work to produce my card game, Telegram bots and visualisations. I have made even more than this during my time in a Data Analytics position. Here are the functions and datasets that I can share freely, as they mostly use government-approved resources. You can view the codes used to extract data pertaining to MRT, buses, roads, altitude and parking. Packages used: requests, pandas, geopandas, json, sheets.py, utils.py, itertools, shapely, matplotlib and more.</span>
+				<span id="language-py">This package is made up of many small segments, all combined to assist me in learning Chinese, Japanese and Korean. Particularly, I used web scraping to obtain sample sentences for any given word, along with English transliterations and translations for all sorts of text. I've also done web-scraping scripts to extract French and Spanish vocabulary from a variety of sources. Packages used: re, pykakasi, chinese, spiderman.py, utils.py, sheets.py, jaconv, random and more.</span>
+				<span id="spiderman-py">This is the package that I use most often. It greatly improved my efficiency in Web Scraping, making the whole process neater. It involves a singular class, named website() that accepts a url. And in it, you can extract the tables, lists and links found in the site. It streamlined a lot of my daily processes.</span>
+				<span id="utils-py">This package is made up of a collection of useful functions, using all sorts of packages and dependencies. More generally, this is a dumping ground for segments of codes that I repeatedly use during my time programming. Codes relating to geography and pandas for instance.</span>
+				<span id="telegram-py">This package facilitates the creation of a telegram interface for codes, allowing for the remote activation and monitoring of scripts. This allowed me to be very far from my workstation, to go around the place while my code was still running. Do note that setting up a Telegram bot first needs to be done via BotFather, and botId is what is needed in the code.</span>
+				<span id="chords-py">I've been doing alot of Machine Learning and Recurrent Neural Network projects pertaining to the chord progressions of songs. While that has some success, I wanted to take a step further to incorporate NLP into the RNN. Meaning, I wanted to output a chord progression given any piece of text. That part is quite unfinished so this is the part I have. So basically, once I get a list of songs, along with their artists, I can get their chord progressions, standardise them and extract their BPM and popularity.</span>
+				<span id="sheets-py">This package is simple. It just extracts data out from your Google Sheets as a dataframe. Although I have many different functions to suit my needs, they all follow one pattern, which is the function I have listed below.</span>
 			</ul>
 		</main>
 	</section>

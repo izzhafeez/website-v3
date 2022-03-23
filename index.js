@@ -27,7 +27,7 @@ function popdown() {
 }
 
 function turnon(id, name) {
-	if (document.documentElement.clientWidth > 1200 || id == "default") {
+	if (document.documentElement.clientWidth > 0 || id == "default") {
 		var replaceWith = "<h1>" + name.toUpperCase() + " </h1>" + document.getElementById(id).innerHTML;
 		document.getElementById("summary").innerHTML = replaceWith;
 	}
@@ -38,29 +38,55 @@ function searchFunction() {
 	input = document.getElementById("searcherInput");
 	filter = input.value.toUpperCase();
 	const filterArray = filter.split(" ");
-	const articleArray = ["experience", "projects", "certifications", "awards", "skills"];
-	articleArray.forEach(articleName => {
-		var article = document.getElementById(articleName + "-article");
-		var div = article.querySelectorAll("[title]");
-		var count = 0;
-		for (i = 0; i < div.length; i++) {
-			var articleEntry = document.getElementById(div[i].getAttribute("title"));
-			var text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-			var passed = false;
-			filterArray.forEach(item => {
-				passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-			})
-			if (filter == "") {
-				passed = true;
+	try {
+		const articleArray = ["experience", "projects", "certifications", "awards", "skills"];
+		articleArray.forEach(articleName => {
+			var article = document.getElementById(articleName + "-article");
+			var div = article.querySelectorAll("[title]");
+			var count = 0;
+			for (i = 0; i < div.length; i++) {
+				var articleEntry = document.getElementById(div[i].getAttribute("title"));
+				var text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+				var passed = false;
+				filterArray.forEach(item => {
+					passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+				})
+				if (filter == "") {
+					passed = true;
+				}
+				if (passed) {
+					div[i].style.display = "";
+					count++;
+				} else {
+					div[i].style.display = "none";
+				}
 			}
-			if (passed) {
-				div[i].style.display = "";
-				count++;
-			} else {
-				div[i].style.display = "none";
+		})
+	} catch (e) {
+		const articleArray = ["modules", "hobbies", "interests"];
+		articleArray.forEach(articleName => {
+			var article = document.getElementById(articleName + "-article");
+			var div = article.querySelectorAll("[title]");
+			var count = 0;
+			for (i = 0; i < div.length; i++) {
+				var articleEntry = document.getElementById(div[i].getAttribute("title"));
+				var text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
+				var passed = false;
+				filterArray.forEach(item => {
+					passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
+				})
+				if (filter == "") {
+					passed = true;
+				}
+				if (passed) {
+					div[i].style.display = "";
+					count++;
+				} else {
+					div[i].style.display = "none";
+				}
 			}
-		}
-	})
+		})
+	}
 	// article = document.getElementById("skills-article");
 	// div = article.getElementsByTagName("div");
 	// var count = 0;

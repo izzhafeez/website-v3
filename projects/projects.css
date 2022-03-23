@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+
+pre {
+	/* border: 1px solid white; */
+	border: var(--border);
+	line-height: 1.2;
+	padding: 0 1rem;
+	overflow-x: scroll;
+	color: var(--text);
+}
+
+fn {
+	color: var(--contrast);
+}
+
+quote {
+	color: #999;
+}

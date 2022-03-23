@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<title>Izz Hafeez</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" type="image/png" href="img/desmosito bw.png">
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Izz Hafeez Personal Blog">
+	<meta property="og:title" content="Izz Hafeez"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="img/desmosito-big-image.png"/>
+	<meta property="og:description" content="Personal Site / Portfolio"/>
+	<meta property="og:url" content="izzhafeez.com"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name=”x-apple-disable-message-reformatting”/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:image" content="img/desmosito-og-image.png"/>
+	<script src="index.js"></script>
+	<script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+</head>
+<body id="body" onload="turnon('default','Personal Blog')">
+	<pop id="pop-outer">
+		<button onclick="popdown()"><u>Close (X)</u></button>
+		<h2 id="pop-title"></h2>
+		<p id="pop-text"></p>
+	</pop>
+	<section class="landing" id="landing">
+		<aside class="landing">
+			<summary id="summary"></summary>
+			<footer>
+				<div id="searcher">
+			        <input type="text" id="searcherInput" onkeyup="searchFunction()" placeholder="Search for keywords..." title="Type in some keywords">
+			    </div>
+				<a href="https://www.linkedin.com/in/izzhafeez/"><img src="img/linkedin.svg" alt="LinkedIn" height="20" value="#0A66C2"></a>
+				<a href="https://www.youtube.com/c/izzhafeez"><img src="img/youtube.svg" alt="Youtube" height="20" value="#FF0000"></a>
+				<a href="https://www.instagram.com/mynameizzhafeez/?hl=en"><img src="img/instagram.svg" alt="Instagram" height="20" value="#E4405F"></a>
+				<a href="mailto:izzhafeez@gmail.com"><img src="img/gmail.svg" alt="Gmail" height="20" value="#EA4335"></a>
+				<a href="https://github.com/mynameizzhafeez"><img src="img/github.svg" alt="Github" height="20" value="#181717"></a>
+				<a href="https://musescore.com/izzhafeez"><img src="img/musescore.svg" alt="MuseScore" height="20" value="#1A70B8"></a>
+			</footer>
+		</aside>
+		<main class="landing">
+			<h3><a href="index.html">RETURN HOME</a></h3>
+			<h3 id="modules">MODULES</h3>
+			<skills-entry id="experience-article">
+				<div class="entry" onmouseover = "turnon('CS1101S','Programming Methodology I')" onclick = "popup('CS1101S','Programming Methodology I')" title="CS1101S">CS1101S</div>
+				<div class="entry" onmouseover = "turnon('CS1231S','Discrete Mathematics')" onclick = "popup('CS1231S','Discrete Mathematics')" title="CS1231S">CS1231S</div>
+				<div class="entry" onmouseover = "turnon('MA1521','Calculus For Computing')" onclick = "popup('MA1521','Calculus For Computing')" title="MA1521">MA1521</div>
+				<div class="entry" onmouseover = "turnon('MA2001','Linear Algebra I')" onclick = "popup('MA2001','Linear Algebra I')" title="MA2001">MA2001</div>
+				<div class="entry" onmouseover = "turnon('GESS1019','Urban Planning In Singapore')" onclick = "popup('GESS1019','Urban Planning In Singapore')" title="GESS1019">GESS1019</div>
+				<div class="entry" onmouseover = "turnon('CS2030S','Programming Methodology II')" onclick = "popup('CS2030S','Programming Methodology II')" title="CS2030S">CS2030S</div>
+				<div class="entry" onmouseover = "turnon('CS2040S','Data Structures And Algorithms')" onclick = "popup('CS2040S','Data Structures And Algorithms')" title="CS2040S">CS2040S</div>
+				<div class="entry" onmouseover = "turnon('IS1103','Ethics For Computing')" onclick = "popup('IS1103','Ethics For Computing')" title="IS1103">IS1103</div>
+				<div class="entry" onmouseover = "turnon('GEC1030','Metropolis: A City In World History')" onclick = "popup('GEC1030','Metropolis: A City In World History')" title="GEC1030">GEC1030</div>
+				<div class="entry" onmouseover = "turnon('GEA1000','Quantitative Reasoning With Data')" onclick = "popup('GEA1000','Quantitative Reasoning With Data')" title="GEA1000">GEA1000</div>
+				<div class="entry" onmouseover = "turnon('ST2334','Probability And Statistics')" onclick = "popup('ST2334','Probability And Statistics')" title="ST2334">ST2334</div>
+			</skills-entry>
+			
+			<ul>
+				<span id="default">I've had a lot of hobbies and interests in the past, so I'd like to share about some of them in my blog. To generalise, my interests encompass a continuum of concepts that "further my understanding of the world". This would primarily include Astronomy, Geography, Mathematics and the Natural Sciences, but many related topics such as Mythology and Languages get roped in as well. Of course, I'll also share my experiences in taking modules in NUS, as well as my music and coding journeys.</span>
+				<span id="CS1101S">I took <white>CS1101S</white> in <white>21/22 S1</white> and received an <white>A</white>. The high workload mainly comes from the weekly assignments on Source Academy, a platform specially designed for this module. Among the modules I took this semester, 80% of my studying time went to this module. It took me quite a while to get used to the Environment Model, so be sure to understand the patterns shown in the given examples. Despite this, I find the module very enjoyable as every assignment provides a new insight into the world of CS, be it robotics or audio/image processing. There are also optional enrichment material and contests along the way for those who want to explore further. I'm glad I didn't skip this module.</span>
+				<span id="CS1231S">I took <white>CS1231S</white> in <white>21/22 S1</white> and received an <white>A+</white>. The workload is pretty low, as you only have a few assignments and tutorial attendance. However, this module tends to be pretty difficult as a lot of mathematical rigour is needed to answer the questions. Along the way, there will be a ton of proofs you will need to understand and apply. It is important to remember these solution patterns, and try to break down the questions into different portions. Otherwise, it is relatively hard to even start writing your proof.</span>
+				<span id="MA1521">I took <white>MA1521</white> in <white>21/22 S1</white> and received an <white>A</white>. Owing to its awkward 6-8pm lecture slot, and the dryness of the module content, the attendance rate steadily decreased during the semester. Nothing against the prof, since it is quite clear that he genuinely cares about the learning of the students, doing his best to ensure fairness during tests. Severely understaffed since he taught the lectures as well as all the tutorial slots. Bell curve is insane though, but don't try to cheat. Definitions and edge cases are common pitfalls in the weekly quizzes, so do at least read the proper definitions as these may be tested.</span>
+				<span id="MA2001">I took <white>MA2001</white> in <white>21/22 S1</white> and received an <white>A-</white>. I've gotten a little headstart on Linear Algebra, as I took Further Mathematics in JC. However, I did run into a little trouble in later topics in Orthogonality. I messed up my finals too, but I can push some of that blame to the lift renovation happening on my floor during that time. The key to this module is to be consistent, as every concept will accumulate and will be necessary for understanding later topics.</span>
+				<span id="GESS1019">I took <white>GESS1019</white> in <white>21/22 S1</white> and received an <white>A-</white>. This is a free UE for real estate and civil engineering students, so take caution when entering this module. This module teaches concepts such as urban planning history, development control, participatory planning and transport planning. Do read up on the key features of our Master Plans and Concept Plans, as they were important concepts during the essay-based finals.</span>
+				<span id="CS2030S">21/22 S2</span>
+				<span id="CS2040S">21/22 S2</span>
+				<span id="IS1103">21/22 S2</span>
+				<span id="GEC1030">21/22 S2</span>
+				<span id="GEA1000">21/22 S2</span>
+				<span id="ST2334">21/22 S2</span>
+			</ul>
+		</main>
+	</section>
+</body>

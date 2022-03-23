@@ -1,0 +1,62 @@
+@media screen and (min-width: 1200px) {
+    #pop-outer {
+		width: 80vw;
+		height: auto;
+		margin: 10%;
+		position: fixed;
+		background: black;
+		padding: 2rem;
+		z-index: 3;
+		border: 1px solid var(--entryhover);
+		display: none;
+		overflow: scroll;
+	}
+
+	#pop-outer > button {
+		right: 1rem;
+		background-color: transparent;
+		color: white;
+		border: none;
+		position: absolute;
+	}
+
+	#pop-outer > button:hover {
+		color: var(--link);
+	}
+
+	#pop-title {
+		color: white;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#pop-outer {
+		width: 90vw;
+		height: auto;
+		max-height: 90%;
+		margin: 5%;
+		position: fixed;
+		background: black;
+		padding: 2rem;
+		z-index: 3;
+		border: 1px solid var(--entryhover);
+		display: none;
+		overflow: scroll;
+	}
+
+	#pop-outer > button {
+		right: 1rem;
+		background-color: transparent;
+		color: white;
+		border: none;
+		position: absolute;
+	}
+
+	#pop-outer > button:hover {
+		color: var(--link);
+	}
+
+	#pop-title {
+		color: white;
+	}
+}

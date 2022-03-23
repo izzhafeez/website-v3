@@ -1,0 +1,39 @@
+#trans:checked + label {
+	background: var(--technical);
+	color: black;
+}
+
+#mash:checked + label {
+	background: var(--soft);
+	color: black;
+}
+
+#orig:checked + label {
+	background: var(--tools);
+	color: black;
+}
+
+.trans, .mash, .orig {
+	border: var(--border);
+}
+
+#trans:not(:checked) ~ skills-entry > .trans,
+#mash:not(:checked) ~ skills-entry > .mash,
+#orig:not(:checked) ~ skills-entry > .orig {
+	display: none;
+}
+
+#colors-scores:checked ~ skills-entry > .trans {
+	border: 1px solid var(--technical);
+	/* color: black; */
+}
+
+#colors-scores:checked ~ skills-entry > .mash {
+	border: 1px solid var(--soft);
+	/* color: black; */
+}
+
+#colors-scores:checked ~ skills-entry > .orig {
+	border: 1px solid var(--tools);
+	/* color: black; */
+}

@@ -1,0 +1,62 @@
+#technical:checked + label {
+	background: var(--technical);
+	color: var(--technicaltext);
+}
+
+#soft:checked + label {
+	background: var(--soft);
+	color: var(--softtext);
+}
+
+#tools:checked + label {
+	background: var(--tools);
+	color: var(--toolstext);
+}
+
+.technical, .soft, .tools {
+	border: var(--border);
+}
+
+#technical:not(:checked) ~ skills-entry > .technical,
+#soft:not(:checked) ~ skills-entry > .soft,
+#tools:not(:checked) ~ skills-entry > .tools {
+	display: none;
+}
+
+.technical:hover {
+	background: var(--technical);
+	color: var(--technicaltext);
+}
+
+.soft:hover {
+	background: var(--soft);
+	color: var(--softtext);
+}
+
+.tools:hover {
+	background: var(--tools);
+	color: var(--toolstext);
+}
+
+#colors:checked ~ skills-entry > .technical {
+	border: 1px solid var(--technical);
+	/* color: black; */
+}
+
+#colors:checked ~ skills-entry > .soft {
+	border: 1px solid var(--soft);
+	/* color: black; */
+}
+
+#colors:checked ~ skills-entry > .tools {
+	border: 1px solid var(--tools);
+	/* color: black; */
+}
+
+@media screen and (min-width: 1200px) {
+	.technical:hover,
+	.soft:hover,
+	.tools:hover {
+		transform: scale(1.00);
+	}
+}
