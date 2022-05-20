@@ -23,35 +23,35 @@
 	display: none;
 }
 
-.technical:hover {
+#colors:checked ~ skills-entry > .technical:hover {
 	background: var(--technical);
 	color: var(--technicaltext);
 }
 
-.soft:hover {
+#colors:checked ~ skills-entry > .soft:hover {
 	background: var(--soft);
 	color: var(--softtext);
 }
 
-.tools:hover {
+#colors:checked ~ skills-entry > .tools:hover {
 	background: var(--tools);
 	color: var(--toolstext);
 }
 
-#colors:checked ~ skills-entry > .technical {
+/* #colors:checked ~ skills-entry > .technical {
 	border: 1px solid var(--technical);
-	/* color: black; */
+	color: black;
 }
 
 #colors:checked ~ skills-entry > .soft {
 	border: 1px solid var(--soft);
-	/* color: black; */
+	color: black;
 }
 
 #colors:checked ~ skills-entry > .tools {
 	border: 1px solid var(--tools);
-	/* color: black; */
-}
+	color: black;
+} */
 
 @media screen and (min-width: 1200px) {
 	.technical:hover,
