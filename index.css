@@ -17,12 +17,14 @@
 	--entryhover: var(--estoniablue);
 	--text: white;
 	--alttext: #50D8D7;
-	--border: 1px solid var(--entryhover);
+	--border: 2px solid var(--entryhover);
 	--contrast-border: 1px solid var(--contrast);
 	--technical: var(--estoniablue);
 	--technicaltext: black;
-	--soft: var(--estoniablack);
-	--softtext: white;
+	/* --soft: var(--estoniablack);
+	--softtext: white; */
+	--soft: #50D8D7;
+	--softtext: black;
 	--tools: var(--estoniawhite);
 	--toolstext: black;
 	--link: var(--text);
