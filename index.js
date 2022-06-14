@@ -27,7 +27,7 @@ function popdown() {
 }
 
 function turnon(id, name) {
-	if (document.documentElement.clientWidth > 0 || id == "default") {
+	if (document.documentElement.clientWidth > 1200 || id == "default") {
 		var replaceWith = "<h1>" + name.toUpperCase() + " </h1>" + document.getElementById(id).innerHTML;
 		document.getElementById("summary").innerHTML = replaceWith;
 	}
@@ -87,99 +87,5 @@ function searchFunction() {
 			}
 		})
 	}
-	// article = document.getElementById("skills-article");
-	// div = article.getElementsByTagName("div");
-	// var count = 0;
-	// for (i = 0; i < div.length; i++) {
-	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
-	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-	// 	passed = false;
-	// 	filterArray.forEach(item => {
-	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-	// 	})
-	// 	if (passed) {
-	// 		div[i].style.display = "";
-	// 		count++;
-	// 	} else {
-	// 		div[i].style.display = "none";
-	// 	}
-	// }
-	// article = document.getElementById("experience-article");
-	// div = article.getElementsByClassName("entry");
-	// for (i = 0; i < div.length; i++) {
-	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
-	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-	// 	passed = false;
-	// 	filterArray.forEach(item => {
-	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-	// 	})
-	// 	if (passed) {
-	// 		div[i].style.display = "";
-	// 		count++;
-	// 	} else {
-	// 		div[i].style.display = "none";
-	// 	}
-	// }
-	// article = document.getElementById("projects-article");
-	// div = article.getElementsByClassName("entry");
-	// for (i = 0; i < div.length; i++) {
-	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
-	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-	// 	passed = false;
-	// 	filterArray.forEach(item => {
-	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-	// 	})
-	// 	if (passed) {
-	// 		div[i].style.display = "";
-	// 		count++;
-	// 	} else {
-	// 		div[i].style.display = "none";
-	// 	}
-	// }
-	// article = document.getElementById("certifications-article");
-	// div = article.getElementsByClassName("entry");
-	// for (i = 0; i < div.length; i++) {
-	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
-	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-	// 	passed = false;
-	// 	filterArray.forEach(item => {
-	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-	// 	})
-	// 	if (passed) {
-	// 		div[i].style.display = "";
-	// 		count++;
-	// 	} else {
-	// 		div[i].style.display = "none";
-	// 	}
-	// }
-	// article = document.getElementById("awards-article");
-	// div = article.getElementsByClassName("entry");
-	// for (i = 0; i < div.length; i++) {
-	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
-	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-	// 	passed = false;
-	// 	filterArray.forEach(item => {
-	// 		passed = item != "" ? passed || text.toUpperCase().indexOf(item) > -1 : passed
-	// 	})
-	// 	if (passed) {
-	// 		div[i].style.display = "";
-	// 		count++;
-	// 	} else {
-	// 		div[i].style.display = "none";
-	// 	}
-	// }
-	// article = document.getElementById("music-article");
-	// div = article.getElementsByClassName("entry");
-	// for (i = 0; i < div.length; i++) {
-	// 	articleEntry = document.getElementById(div[i].getAttribute("title"));
-	// 	text = articleEntry.textContent || articleEntry.innerText + div[i].textContent || div[i].innerText;
-	// 	if (text.toUpperCase().indexOf(filter) > -1) {
-	// 		div[i].style.display = "";
-	// 	} else {
-	// 		div[i].style.display = "none";
-	// 	}
-	// }
 }
 
-// var mallsData = [
-// ]
