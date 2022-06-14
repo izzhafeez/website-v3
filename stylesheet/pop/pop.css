@@ -31,13 +31,13 @@
 
 @media screen and (max-width: 1200px) {
 	#pop-outer {
-		width: 90vw;
+		width: 96vw;
 		height: auto;
-		max-height: 90%;
-		margin: 5%;
+		max-height: 96%;
+		margin: 2%;
 		position: fixed;
 		background: black;
-		padding: 2rem;
+		padding: 1rem;
 		z-index: 3;
 		border: 1px solid var(--entryhover);
 		display: none;

@@ -38,20 +38,20 @@
 	color: var(--toolstext);
 }
 
-/* #colors:checked ~ skills-entry > .technical {
+#colors:checked ~ skills-entry > .technical {
 	border: 1px solid var(--technical);
-	color: black;
+	color: var(--text);
 }
 
 #colors:checked ~ skills-entry > .soft {
 	border: 1px solid var(--soft);
-	color: black;
+	color: var(--text);
 }
 
 #colors:checked ~ skills-entry > .tools {
 	border: 1px solid var(--tools);
-	color: black;
-} */
+	color: var(--text);
+}
 
 @media screen and (min-width: 1200px) {
 	.technical:hover,
