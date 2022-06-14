@@ -12,8 +12,10 @@
 }
 
 :root {
-	--back: var(--barbadosblue);
-	--offback: #082D87;
+	/* --back: var(--barbadosblue); */
+	--back: #202020;
+	/* --offback: #082D87; */
+	--offback: #262626;
 	--entryhover: var(--estoniablue);
 	--text: white;
 	--alttext: #50D8D7;
